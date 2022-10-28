@@ -8,18 +8,27 @@ export const useUserSession = defineStore('userSession', () => {
   // token will be synced with local storage
   // @see https://vueuse.org/core/usestorage/
   const token = useStorage('token', '')
-
-  const user = ref<Partial<UserData>>()
+  const id_school = useStorage('id_school', '')
+  const id_user = useStorage('id_user', '')
+  const user = useStorage('user', '')
   const loading = ref(true)
 
   const isLoggedIn = computed(() => token.value !== undefined && token.value !== '')
 
-  function setUser(newUser: Partial<UserData>) {
+  function setUser(newUser: string) {
     user.value = newUser
   }
 
   function setToken(newToken: string) {
     token.value = newToken
+  }
+
+  function setSchool(newSchool: string) {
+    id_school.value = newSchool
+  }
+
+  function setId(newId: string) {
+    id_user.value = newId
   }
 
   function setLoading(newLoading: boolean) {
@@ -29,6 +38,8 @@ export const useUserSession = defineStore('userSession', () => {
   async function logoutUser() {
     token.value = undefined
     user.value = undefined
+    id_school.value = undefined
+    id_user.value = undefined
   }
 
   return {
@@ -40,6 +51,8 @@ export const useUserSession = defineStore('userSession', () => {
     setUser,
     setToken,
     setLoading,
+    setSchool,
+    setId
   } as const
 })
 

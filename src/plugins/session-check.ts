@@ -34,7 +34,7 @@ export default definePlugin(async ({ router, api, pinia }) => {
       userSession.setUser(user)
     } catch (err) {
       // delete stored token if it fails
-      userSession.logoutUser()
+      // userSession.logoutUser()
     }
   }
 

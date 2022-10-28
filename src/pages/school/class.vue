@@ -77,6 +77,22 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
         <div class="search-type">
           <!--Left filters block -->
           <div class="job-time pt-0">
+            <div class="job-time-title mb-3">Wali Kelas</div>
+            <div class="job-card">
+                <div class="has-text-centered">
+                    <img class="job-card-logo" src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" alt="" />
+                </div>
+                <div class="job-card-title mt-2 has-text-centered">Wali Kelas</div>
+                <div class="job-card-subtitle has-text-centered">Mohammed John Doel Jr</div>
+                <div class="job-card-buttons">
+                    <VButtons>
+                    <VButton color="info" raised>Detail</VButton>
+                    <VButton color="info" raised>Messages</VButton>
+                    </VButtons>
+                </div>
+              </div>
+          </div>
+          <div class="job-time">
             <div class="job-time-title">Mata Pelajaran</div>
             <div class="job-wrapper">
               <listWidgetUserList :users="userList" />
@@ -107,11 +123,12 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           <div class="job-cards">
             <!--Card-->
             <div v-for="(student, index) in 35" :key="index" class="job-card">
-              <div class="job-card-header">
+              <!-- <div class="job-card-header has-text-centered"> -->
+              <div class="has-text-centered">
                 <img class="job-card-logo" src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" alt="" />
               </div>
-              <div class="job-card-title mt-2">Bahasa Indonesia</div>
-              <div class="job-card-subtitle">Mohammed John Doel Jr</div>
+              <div class="job-card-title mt-2 has-text-centered">Bahasa Indonesia</div>
+              <div class="job-card-subtitle has-text-centered">Mohammed John Doel Jr</div>
               <div class="job-detail-buttons">
                 <!-- <VTags>
                   <VTag
@@ -126,7 +143,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
               <div class="job-card-buttons">
                 <VButtons>
                   <VButton color="primary" raised>Detail</VButton>
-                  <VButton dark-outlined>Messages</VButton>
+                  <VButton color="primary" raised>Messages</VButton>
                 </VButtons>
               </div>
             </div>

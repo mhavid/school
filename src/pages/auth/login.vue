@@ -2,9 +2,10 @@
 import { useHead } from '@vueuse/head'
 
 import { useDarkmode } from '/@src/stores/darkmode'
-import { useUserSession } from '/@src/stores/userSession'
+import { useStorage } from '@vueuse/core'
+import { useLogin } from '/@src/stores/login'
+import { ref, onMounted } from 'vue'
 import { useNotyf } from '/@src/composable/useNotyf'
-import sleep from '/@src/utils/sleep'
 
 type StepId = 'login' | 'forgot-password'
 const step = ref<StepId>('login')
@@ -12,34 +13,43 @@ const isLoading = ref(false)
 const darkmode = useDarkmode()
 const router = useRouter()
 const route = useRoute()
-const notif = useNotyf()
-const userSession = useUserSession()
-const redirect = route.query.redirect as string
+const notif:any = useNotyf()
+const inputUsername = ref('')
+const inputPassword = ref('')
+
+const login = useLogin()
 
 const handleLogin = async () => {
-  if (!isLoading.value) {
-    isLoading.value = true
-
-    await sleep(2000)
-    userSession.setToken('logged-in')
-
-    notif.dismissAll()
-    notif.success('Welcome back, Erik Kovalsky')
-
-    if (redirect) {
-      router.push(redirect)
-    } else {
-      router.push({
-        name: '/sidebar/dashboards',
-      })
+  try {
+    if (!isLoading.value) {
+      isLoading.value = true
+      const r = await login.fetchLogins(inputUsername.value, inputPassword.value)
+      if(r?.status == true){
+        notif.dismissAll()
+        notif.success('Welcome back,' + r.data.user)
+        router.push({
+          name: '/school/class',
+        })
+      }else{
+        notif.error('User or Password Not Found')
+      }
+      isLoading.value = false
     }
-
+  } catch (error) {
     isLoading.value = false
+    return error
   }
 }
 
+onMounted(()=>{
+  if(useStorage('token', '') != undefined){
+    router.push({
+      name: '/school/class',
+    })
+  }
+})
 useHead({
-  title: 'Auth Login 1 - Vuero',
+  title: 'Login',
 })
 </script>
 
@@ -54,11 +64,7 @@ useHead({
             <div class="container">
               <div class="columns">
                 <div class="column">
-                  <img
-                    class="hero-image"
-                    src="/@src/assets/illustrations/login/station.svg"
-                    alt=""
-                  />
+                  <img class="hero-image" src="/@src/assets/illustrations/login/station.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -70,35 +76,20 @@ useHead({
           <AnimatedLogo width="38px" height="38px" />
         </RouterLink>
 
-        <label
-          class="dark-mode ml-auto"
-          tabindex="0"
-          @keydown.space.prevent="(e) => (e.target as HTMLLabelElement).click()"
-        >
-          <input
-            data-cy="dark-mode-toggle"
-            type="checkbox"
-            :checked="!darkmode.isDark"
-            @change="darkmode.onChange"
-          />
+        <label class="dark-mode ml-auto" tabindex="0" @keydown.space.prevent="(e) => (e.target).click()">
+          <input data-cy="dark-mode-toggle" type="checkbox" :checked="!darkmode.isDark" @change="darkmode.onChange" />
           <span></span>
         </label>
         <div class="is-form">
           <div class="hero-body">
             <div class="form-text" :class="[step !== 'login' && 'is-hidden']">
-              <h2>Sign In</h2>
               <p>Welcome back to your account.</p>
             </div>
             <div class="form-text" :class="[step === 'login' && 'is-hidden']">
               <h2>Recover Account</h2>
               <p>Reset your account password.</p>
             </div>
-            <form
-              data-cy="login-form"
-              :class="[step !== 'login' && 'is-hidden']"
-              class="login-wrapper"
-              @submit.prevent="handleLogin"
-            >
+            <form data-cy="login-form" :class="[step !== 'login' && 'is-hidden']" class="login-wrapper" @submit.prevent="handleLogin">
               <VMessage color="primary">
                 <div>
                   <strong class="pr-1">email:</strong>
@@ -113,21 +104,13 @@ useHead({
               <VField>
                 <VControl icon="lnil lnil-envelope autv-icon">
                   <VLabel class="auth-label">Email Address</VLabel>
-                  <VInput
-                    data-cy="email-input"
-                    type="email"
-                    autocomplete="current-password"
-                  />
+                  <VInput data-cy="email-input" v-model="inputUsername" type="email" autocomplete="current-password" />
                 </VControl>
               </VField>
               <VField>
                 <VControl icon="lnil lnil-lock-alt autv-icon">
                   <VLabel class="auth-label">Password</VLabel>
-                  <VInput
-                    data-cy="password-input"
-                    type="password"
-                    autocomplete="current-password"
-                  />
+                  <VInput data-cy="password-input" v-model="inputPassword" type="password" autocomplete="current-password" />
                 </VControl>
               </VField>
 
@@ -138,61 +121,32 @@ useHead({
 
                     <span class="toggler">
                       <span class="active">
-                        <i
-                          aria-hidden="true"
-                          class="iconify"
-                          data-icon="feather:check"
-                        ></i>
+                        <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                       </span>
                       <span class="inactive">
-                        <i
-                          aria-hidden="true"
-                          class="iconify"
-                          data-icon="feather:circle"
-                        ></i>
+                        <i aria-hidden="true" class="iconify" data-icon="feather:circle"></i>
                       </span>
                     </span>
                   </VLabel>
                   <VLabel raw class="remember-me">Remember Me</VLabel>
-                  <a
-                    tabindex="0"
-                    @keydown.space.prevent="step = 'forgot-password'"
-                    @click="step = 'forgot-password'"
-                  >
+                  <a tabindex="0" @keydown.space.prevent="step = 'forgot-password'" @click="step = 'forgot-password'">
                     Forgot Password?
                   </a>
                 </VControl>
               </VField>
 
               <div class="button-wrap has-help">
-                <VButton
-                  id="login-button"
-                  :loading="isLoading"
-                  color="primary"
-                  type="submit"
-                  size="big"
-                  rounded
-                  raised
-                  bold
-                >
+                <VButton id="login-button" :loading="isLoading" color="primary" type="submit" size="big" rounded raised bold>
                   Confirm
                 </VButton>
-                <span>
-                  Or
-                  <RouterLink to="/auth/signup-1">Create</RouterLink>
-                  an account.
+                <span>Or <RouterLink to="/auth/signup-1">Create</RouterLink> an account.
                 </span>
               </div>
             </form>
 
-            <form
-              :class="[step !== 'forgot-password' && 'is-hidden']"
-              class="login-wrapper"
-              @submit.prevent
-            >
+            <form :class="[step !== 'forgot-password' && 'is-hidden']" class="login-wrapper" @submit.prevent>
               <p class="recover-text">
-                Enter your email and click on the confirm button to reset your password.
-                We'll send you an email detailing the steps to complete the procedure.
+                Enter your email and click on the confirm button to reset your password. We'll send you an email detailing the steps to complete the procedure.
               </p>
 
               <VField>
@@ -205,15 +159,7 @@ useHead({
                 <VButton color="white" size="big" lower rounded @click="step = 'login'">
                   Cancel
                 </VButton>
-                <VButton
-                  color="primary"
-                  size="big"
-                  type="submit"
-                  lower
-                  rounded
-                  solid
-                  @click="step = 'login'"
-                >
+                <VButton color="primary" size="big" type="submit" lower rounded solid @click="step = 'login'">
                   Confirm
                 </VButton>
               </div>

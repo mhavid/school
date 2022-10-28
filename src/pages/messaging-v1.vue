@@ -17,7 +17,7 @@ const chat = useChat()
 const layoutSwitcher = useLayoutSwitcher()
 const viewWrapper = useViewWrapper()
 const sidebar = useSidebar()
-const notyf = useNotyf()
+const notyf:any = useNotyf()
 
 // onMounted is a composition hook that is called when the component is mounted
 onMounted(async () => {
@@ -73,6 +73,7 @@ watchPostEffect(() => {
 </script>
 
 <template>
+{{chat}}
   <MessagingLayout :theme="layoutSwitcher.sidebarLayoutTheme">
     <template #default="{ isMobileSidebarOpen }">
       <Transition name="slide-x">

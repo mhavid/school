@@ -23,11 +23,14 @@ export interface C {
   }
 }
 
-export async function getDataClass(api: AxiosInstance): Promise<{ data: DC}> {
-    let params = {
+export async function getDataClass(api: AxiosInstance, data: any): Promise<{ data: DC}> {
+    let params:any = {
         id_school : useStorage('id_school', '').value,
         id_user : useStorage('id_user', '').value
     }
+    if(data.class) params.class = data.class
+    if(data.date) params.date = data.date
+
     const response:any = await api.get(`/api/class`, {params})
     return response
 }
@@ -36,7 +39,7 @@ export async function getClass(api: AxiosInstance): Promise<{ data: C}> {
     let params = {
         id_school : useStorage('id_school', '').value,
     }
-    const response:any = await api.get(`/api/classes`, {params})
+    const response:any = await api.get(`/api/class/list`, {params})
     return response
 }
 

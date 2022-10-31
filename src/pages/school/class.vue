@@ -19,6 +19,7 @@ import { userList } from '/@src/data/widgets/list/userList'
 export type Job = 'web-developer' | 'uiux-designer' | 'backend-developer'
 
 const selectedClass = ref()
+const selectedDay = ref()
 const search = ref('')
 const dayOptions = [
     { value : 'MONDAY', label : 'Senin' },
@@ -32,9 +33,19 @@ const dayOptions = [
 
 onMounted(()=>{
   Promise.all(
-    [classes.fetchDataClass(),classes.fetchClass()]
+    [
+      classes.fetchDataClass({}),
+      classes.fetchClass()
+    ]
   )
 })
+
+const filterClass = ()=>{
+  classes.fetchDataClass({
+    class : selectedClass.value,
+    date  : selectedDay.value
+  })
+}
 
 const filteredStudent = computed(() => {
   if (!search.value) {
@@ -74,7 +85,7 @@ const filteredStudent = computed(() => {
           <VField class="is-autocomplete-select is-curved-select">
             <VControl icon="feather:search">
               <Multiselect
-                v-model="tagsValue"
+                v-model="selectedDay"
                 :searchable="true"
                 :create-tag="false"
                 :options="dayOptions"
@@ -83,7 +94,7 @@ const filteredStudent = computed(() => {
             </VControl>
           </VField>
         </div>
-        <button class="search-button">Search</button>
+        <button class="search-button" @click="filterClass">Search</button>
       </div>
 
       <!--Dashboard content -->

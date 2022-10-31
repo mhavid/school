@@ -11,11 +11,11 @@ export const useClasses = defineStore('classes', () => {
     const teachers = ref([])
     const classes = ref([])
 
-    async function fetchDataClass() {
+    async function fetchDataClass(data: object) {
         if (loading.value) return
         loading.value = true
         try {
-            const response = await getDataClass(api)
+            const response = await getDataClass(api, data)
             students.value = response.data.data.students
             loading.value = false
         } finally {

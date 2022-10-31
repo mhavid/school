@@ -245,6 +245,7 @@ declare module '@vue/runtime-core' {
     ListWidgetTodoList: typeof import('./src/components/partials/widgets/list/content/ListWidgetTodoList.vue')['default']
     ListWidgetTopicList: typeof import('./src/components/partials/widgets/list/content/ListWidgetTopicList.vue')['default']
     ListWidgetUserList: typeof import('./src/components/partials/widgets/list/content/ListWidgetUserList.vue')['default']
+    LoaderClass: typeof import('./src/components/custom/loader/LoaderClass.vue')['default']
     MailboxPanel: typeof import('./src/components/partials/inbox/panel/MailboxPanel.vue')['default']
     MapMarker: typeof import('./src/components/partials/maps/MapMarker.vue')['default']
     MapsDashboard: typeof import('./src/components/pages/dashboards/business/MapsDashboard.vue')['default']

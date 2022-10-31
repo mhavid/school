@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import Vue from 'vue'
+import { useUserSession } from '/@src/stores/userSession'
+const router = useRouter()
+const userSession = useUserSession()
+const logout=()=>{
+  userSession.logoutUser()
+  router.push({
+    name: '/auth/login',
+  })
+}
+</script>
 <template>
   <VDropdown right spaced class="user-dropdown profile-dropdown">
     <template #button="{ toggle }">
@@ -70,6 +82,7 @@
 
       <div class="dropdown-item is-button">
         <VButton
+          @click="logout"
           class="logout-button"
           icon="feather:log-out"
           color="primary"

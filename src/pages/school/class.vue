@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
+import { ref, onMounted } from 'vue'
 
 import { useViewWrapper } from '/@src/stores/viewWrapper'
+import { useClasses } from '/@src/stores/classes'
+const classes = useClasses()
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Classes')
@@ -15,13 +18,8 @@ import { userList } from '/@src/data/widgets/list/userList'
 
 export type Job = 'web-developer' | 'uiux-designer' | 'backend-developer'
 
-const tagsValue = ref<Job[]>([])
-const tagsOptions = [
-  { value: 'web-developer', label: 'Frontend' },
-  { value: 'uiux-designer', label: 'UI/UX' },
-  { value: 'backend-developer', label: 'Backend' },
-]
-
+const selectedClass = ref()
+const search = ref('')
 const dayOptions = [
     { value : 'MONDAY', label : 'Senin' },
     { value : 'TUESDAY', label : 'Selasa' },
@@ -32,9 +30,26 @@ const dayOptions = [
     { value : 'SUNDAY', label : 'Minggu' },
 ]
 
-const jobType = ref(['job-type-2'])
-const jobSeniority = ref(['job-seniority-3', 'job-seniority-4'])
-const jobSalary = ref(['job-salary-5', 'job-salary-6'])
+onMounted(()=>{
+  Promise.all(
+    [classes.fetchDataClass(),classes.fetchClass()]
+  )
+})
+
+const filteredStudent = computed(() => {
+  if (!search.value) {
+    if(classes.loading) return []
+    return classes.students
+  } else {
+    const filterRe = new RegExp(search.value, 'i')
+    return classes.students.filter((item:any) => {
+      return (
+        item.name.match(filterRe) //||
+      )
+    })
+  }
+})
+
 </script>
 
 <template>
@@ -44,12 +59,12 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
       <div class="search-menu">
         <div class="search-bar">
           <VField class="is-autocomplete-select is-curved-select">
-            <VControl icon="feather:search">
+            <VControl icon="feather:users">
               <Multiselect
-                v-model="tagsValue"
+                v-model="selectedClass"
                 :searchable="true"
                 :create-tag="false"
-                :options="tagsOptions"
+                :options="classes.classes"
                 placeholder=""
               />
             </VControl>
@@ -100,7 +115,7 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           </div>
 
           <div class="alert mt-4">
-            asas
+            XXX
           </div>
         </div>
 
@@ -109,26 +124,29 @@ const jobSalary = ref(['job-salary-5', 'job-salary-6'])
           <!--Results toolbar-->
 
           <div class="searched-bar">
-            <div class="searched-count">Showing 35 Students</div>
+            <div class="searched-count">Showing {{ filteredStudent.length ?? 0 }} Students</div>
             <div class="searched-link">
                 <VField>
                     <VControl icon="feather:search">
-                        <VInput type="text" placeholder="Search Student" />
+                        <VInput v-model="search" type="text" placeholder="Search Student" />
                     </VControl>
                 </VField>
             </div>
           </div>
 
           <!--Results content-->
-          <div class="job-cards">
+          <div class="job-cards" v-if="classes.loading">
+            <LoaderClass v-for="a in 30" :key="a" />
+          </div>
+          <div v-else class="job-cards">
             <!--Card-->
-            <div v-for="(student, index) in 35" :key="index" class="job-card">
+            <div v-for="(student, index) in filteredStudent" :key="index" class="job-card">
               <!-- <div class="job-card-header has-text-centered"> -->
               <div class="has-text-centered">
-                <img class="job-card-logo" src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" alt="" />
+                <img class="job-card-logo" :src="student.foto" alt="" />
               </div>
-              <div class="job-card-title mt-2 has-text-centered">Bahasa Indonesia</div>
-              <div class="job-card-subtitle has-text-centered">Mohammed John Doel Jr</div>
+              <div class="job-card-title mt-2 has-text-centered">{{ student.name }}</div>
+              <div class="job-card-subtitle has-text-centered">{{ student.email }}</div>
               <div class="job-detail-buttons">
                 <!-- <VTags>
                   <VTag

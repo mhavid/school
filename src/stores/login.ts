@@ -13,7 +13,6 @@ export const useLogin = defineStore('credentials', () => {
 
     async function fetchLogins(username: string, password: string) {
         if (loading.value) return
-        console.log(loading.value)
         loading.value = true
         try {
             const response = await fetchLogin(api, username, password)
@@ -36,6 +35,7 @@ export const useLogin = defineStore('credentials', () => {
 
     return {
         credentials,
+        loading,
         fetchLogins
     } as const
 })

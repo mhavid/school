@@ -38,7 +38,7 @@ onMounted(()=>{
 
 const filteredStudent = computed(() => {
   if (!search.value) {
-    if(classes.loading) return []
+    if(classes.students == undefined) return []
     return classes.students
   } else {
     const filterRe = new RegExp(search.value, 'i')

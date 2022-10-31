@@ -14,7 +14,7 @@ const darkmode = useDarkmode()
 const router = useRouter()
 const route = useRoute()
 const notif:any = useNotyf()
-const inputUsername = ref('')
+const inputUsername = ref('admin@gmail.com')
 const inputPassword = ref('')
 
 const login = useLogin()
@@ -93,11 +93,11 @@ useHead({
               <VMessage color="primary">
                 <div>
                   <strong class="pr-1">email:</strong>
-                  <span>john.doe@cssninja.io</span>
+                  <span>admin@gmail.com</span>
                 </div>
                 <div>
                   <strong class="pr-1">password:</strong>
-                  <span>ada.lovelace</span>
+                  <span>nothingtodisplay</span>
                 </div>
               </VMessage>
 

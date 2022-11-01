@@ -37,6 +37,7 @@ const handleLogin = async () => {
     }
   } catch (error) {
     isLoading.value = false
+    notif.error('Network Error')
     return error
   }
 }

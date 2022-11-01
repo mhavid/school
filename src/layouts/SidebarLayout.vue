@@ -237,6 +237,11 @@ watch(
 
         <!-- Messaging -->
         <li>
+          <RouterLink id="open-schedule" to="/school/schedule" data-content="Schedule">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:calendar"></i>
+          </RouterLink>
+        </li>
+        <li>
           <RouterLink id="open-messages" to="/messaging-v1" data-content="Messaging">
             <i
               aria-hidden="true"

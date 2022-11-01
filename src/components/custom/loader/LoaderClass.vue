@@ -3,7 +3,7 @@
     <div class="job-card">
         <!-- <div class="job-card-header has-text-centered"> -->
         <div class="has-text-centered">
-            <center><VPlaceloadAvatar centered class="mx-1" size="xl" /></center>
+            <VPlaceloadAvatar centered class="mx-1" size="xl" />
         </div>
         <div class="job-card-title mt-2 has-text-centered"><VPlaceload /></div>
         <div class="job-card-subtitle has-text-centered"><VPlaceload /></div>

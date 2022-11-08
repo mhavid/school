@@ -10,7 +10,7 @@ const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle('Classes')
 
 useHead({
-  title: 'Class',
+  title: 'Teachers',
 })
 
 import { jobs } from '/@src/data/dashboards/jobs'

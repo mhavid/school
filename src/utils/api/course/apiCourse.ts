@@ -12,10 +12,8 @@ export interface DC {
   }
 }
 
-export interface C {
-  data : {
-    class : []
-  },
+export interface StateCourses {
+  data : [],
   meta: {
     status: number
     message: string
@@ -23,7 +21,7 @@ export interface C {
   }
 }
 
-export async function getDataClass(api: AxiosInstance, data: any): Promise<{ data: DC}> {
+export async function getDataCourse(api: AxiosInstance, data: any): Promise<{ data: DC}> {
     let params:any = {
         id_school : useStorage('id_school', '').value,
         id_user : useStorage('id_user', '').value
@@ -35,11 +33,19 @@ export async function getDataClass(api: AxiosInstance, data: any): Promise<{ dat
     return response
 }
 
-export async function getClass(api: AxiosInstance): Promise<{ data: C}> {
+export async function getCourses(api: AxiosInstance): Promise<{ data: StateCourses}> {
     let params = {
         id_school : useStorage('id_school', '').value,
     }
-    const response:any = await api.get(`/class/list`, {params})
+    const response:any = await api.get(`/courses`, {params})
+    return response
+}
+
+export async function getTeacher(api: AxiosInstance): Promise<{ data: StateCourses}> {
+    let params = {
+        id_school : useStorage('id_school', '').value,
+    }
+    const response:any = await api.get(`/teachers`, {params})
     return response
 }
 

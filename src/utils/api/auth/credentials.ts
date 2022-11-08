@@ -23,6 +23,6 @@ export async function fetchLogin(
         username : username,
         password : password
     }
-    const response:any = await api.post<Credential[]>(`/api/login`, params)
+    const response:any = await api.post<Credential[]>(`/login`, params)
     return response
 }

@@ -228,6 +228,8 @@ declare module 'vue-router/auto/routes' {
     '/roadmap': RouteRecordInfo<'/roadmap', '/roadmap', Record<never, never>, Record<never, never>>,
     '/school': RouteRecordInfo<'/school', '/school', Record<never, never>, Record<never, never>>,
     '/school/class': RouteRecordInfo<'/school/class', '/school/class', Record<never, never>, Record<never, never>>,
+    '/school/courses': RouteRecordInfo<'/school/courses', '/school/courses', Record<never, never>, Record<never, never>>,
+    '/school/teachers': RouteRecordInfo<'/school/teachers', '/school/teachers', Record<never, never>, Record<never, never>>,
     '/sidebar': RouteRecordInfo<'/sidebar', '/sidebar', Record<never, never>, Record<never, never>>,
     '/sidebar/': RouteRecordInfo<'/sidebar/', '/sidebar/', Record<never, never>, Record<never, never>>,
     '/sidebar/dashboards': RouteRecordInfo<'/sidebar/dashboards', '/sidebar/dashboards', Record<never, never>, Record<never, never>>,

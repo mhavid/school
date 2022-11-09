@@ -34,5 +34,14 @@
         "match": "The password does not match"
       }
     }
+  },
+
+
+  "button" : {
+    "save" : "Save",
+    "update" : "Update",
+    "sabmit" : "Submit",
+    "cancel" : "Cancel",
+    "delete" : "Delete"
   }
 }

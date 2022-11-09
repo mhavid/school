@@ -21,27 +21,13 @@ watch(locale, () => {
 </script>
 
 <template>
-  <div
-    id="languages-panel"
-    :class="[panels.active === 'languages' && 'is-active']"
-    class="right-panel-wrapper is-languages"
-  >
-    <div
-      class="panel-overlay"
-      tabindex="0"
-      @keydown.space.prevent="panels.close()"
-      @click="panels.close()"
-    ></div>
+  <div id="languages-panel" :class="[panels.active === 'languages' && 'is-active']" class="right-panel-wrapper is-languages">
+    <div class="panel-overlay" tabindex="0" @keydown.space.prevent="panels.close()" @click="panels.close()"></div>
 
     <div class="right-panel">
       <div class="right-panel-head">
         <h3>{{ t('select-language') }}</h3>
-        <a
-          class="close-panel"
-          tabindex="0"
-          @keydown.space.prevent="panels.close()"
-          @click="panels.close()"
-        >
+        <a class="close-panel" tabindex="0" @keydown.space.prevent="panels.close()" @click="panels.close()">
           <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>
         </a>
       </div>
@@ -49,15 +35,21 @@ watch(locale, () => {
         <div class="languages-boxes">
           <div class="language-box">
             <div class="language-option">
-              <input
-                v-model="locale"
-                type="radio"
-                name="language_selection"
-                value="en"
-                checked
-              />
+              <input v-model="locale" type="radio" name="language_selection" value="en" checked />
               <div class="language-option-inner">
                 <img src="/images/icons/flags/united-states-of-america.svg" alt="" />
+                <div class="indicator">
+                  <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="language-box">
+            <div class="language-option">
+              <input v-model="locale" type="radio" name="language_selection" value="id" checked />
+              <div class="language-option-inner">
+                <img src="/images/icons/flags/indonesia.svg" alt="" />
                 <div class="indicator">
                   <i aria-hidden="true" class="iconify" data-icon="feather:check"></i>
                 </div>
@@ -103,12 +95,7 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input
-                v-model="locale"
-                type="radio"
-                name="language_selection"
-                value="es-MX"
-              />
+              <input v-model="locale" type="radio" name="language_selection" value="es-MX" />
               <div class="language-option-inner">
                 <img src="/images/icons/flags/mexico.svg" alt="" />
                 <div class="indicator">
@@ -120,12 +107,7 @@ watch(locale, () => {
 
           <div class="language-box">
             <div class="language-option">
-              <input
-                v-model="locale"
-                type="radio"
-                name="language_selection"
-                value="zh-CN"
-              />
+              <input v-model="locale" type="radio" name="language_selection" value="zh-CN" />
               <div class="language-option-inner">
                 <img src="/images/icons/flags/china.svg" alt="" />
                 <div class="indicator">
@@ -137,16 +119,8 @@ watch(locale, () => {
         </div>
 
         <div class="img-wrap has-text-centered">
-          <img
-            class="light-image"
-            src="/@src/assets/illustrations/right-panel/languages.svg"
-            alt=""
-          />
-          <img
-            class="dark-image"
-            src="/@src/assets/illustrations/right-panel/languages-dark.svg"
-            alt=""
-          />
+          <img class="light-image" src="/@src/assets/illustrations/right-panel/languages.svg" alt="" />
+          <img class="dark-image" src="/@src/assets/illustrations/right-panel/languages-dark.svg" alt="" />
         </div>
       </div>
     </div>

@@ -20,6 +20,8 @@ const localFlagSrc = computed(() => {
       return '/images/icons/flags/germany.svg'
     case 'zh-CN':
       return '/images/icons/flags/china.svg'
+    case 'id':
+      return '/images/icons/flags/indonesia.svg'
     case 'en':
     default:
       return '/images/icons/flags/united-states-of-america.svg'

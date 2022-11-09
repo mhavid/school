@@ -38,16 +38,16 @@
 
 
   "menu" : {
-    "academic" : "Akademik",
-    "classes" : "Kelas",
-    "teachers" : "Guru",
-    "courses" : "Mata Pelajaran"
+    "academic": "Akademik",
+    "classes": "Kelas",
+    "teachers": "Guru",
+    "courses": "Mata Pelajaran"
   },
-  "button" : {
-    "save" : "Simpan",
-    "update" : "Perbarui",
-    "sabmit" : "Submit",
-    "cancel" : "Batal",
-    "delete" : "Hapus"
+  "button": {
+    "save": "Simpan",
+    "update": "Perbarui",
+    "sabmit": "Submit",
+    "cancel": "Batal",
+    "delete": "Hapus"
   }
 }

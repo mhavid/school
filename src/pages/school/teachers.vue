@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { ref, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+const { locale, t } = useI18n()
 
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { useClasses } from '/@src/stores/classes'
 const classes = useClasses()
 
 const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Classes')
+viewWrapper.setPageTitle(t('menu.teachers'))
 
 useHead({
-  title: 'Teachers',
+  title: t('menu.teachers'),
 })
 
 import { jobs } from '/@src/data/dashboards/jobs'

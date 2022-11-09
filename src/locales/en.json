@@ -35,13 +35,17 @@
       }
     }
   },
-
-
-  "button" : {
-    "save" : "Save",
-    "update" : "Update",
-    "sabmit" : "Submit",
-    "cancel" : "Cancel",
-    "delete" : "Delete"
+  "button": {
+    "save": "Save",
+    "update": "Update",
+    "sabmit": "Submit",
+    "cancel": "Cancel",
+    "delete": "Delete"
+  },
+  "menu": {
+    "teachers": "Teacher",
+    "academic": "Academica",
+    "classes": "Classes",
+    "courses": "Courses"
   }
 }

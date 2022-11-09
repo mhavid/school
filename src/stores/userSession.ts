@@ -7,27 +7,27 @@ export type UserData = Record<string, any> | null
 export const useUserSession = defineStore('userSession', () => {
   // token will be synced with local storage
   // @see https://vueuse.org/core/usestorage/
-  const token = useStorage('token', '')
-  const id_school = useStorage('id_school', '')
-  const id_user = useStorage('id_user', '')
-  const user = useStorage('user', '')
+  const token = useStorage('token', undefined)
+  const id_school = useStorage('id_school', undefined)
+  const id_user = useStorage('id_user', undefined)
+  const user = useStorage('user', undefined)
   const loading = ref(true)
 
   const isLoggedIn = computed(() => token.value !== undefined && token.value !== '')
 
-  function setUser(newUser: string) {
+  function setUser(newUser: any) {
     user.value = newUser
   }
 
-  function setToken(newToken: string) {
+  function setToken(newToken: any) {
     token.value = newToken
   }
 
-  function setSchool(newSchool: string) {
+  function setSchool(newSchool: any) {
     id_school.value = newSchool
   }
 
-  function setId(newId: string) {
+  function setId(newId: any) {
     id_user.value = newId
   }
 
@@ -40,6 +40,7 @@ export const useUserSession = defineStore('userSession', () => {
     user.value = undefined
     id_school.value = undefined
     id_user.value = undefined
+    localStorage.removeItem('token');
   }
 
   return {

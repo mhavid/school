@@ -43,9 +43,9 @@ const handleLogin = async () => {
 }
 
 onMounted(()=>{
-  if(useStorage('token', '') != undefined){
+  if(useStorage('token', undefined).value != undefined && useStorage('token', undefined).value != '' && useStorage('token', undefined).value != 'undefined'){
     router.push({
-      name: '/school/class',
+      name: '/school/courses',
     })
   }
 })

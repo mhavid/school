@@ -12,7 +12,7 @@ const props = withDefaults(
     nowrap?: boolean
   }>(),
   {
-    defaultSidebar: 'dashboard',
+    defaultSidebar: 'academic',
     theme: 'default',
   }
 )
@@ -56,10 +56,7 @@ watch(
     <div class="app-overlay"></div>
 
     <!-- Mobile navigation -->
-    <MobileNavbar
-      :is-open="isMobileSidebarOpen"
-      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
-    >
+    <MobileNavbar :is-open="isMobileSidebarOpen" @toggle="isMobileSidebarOpen = !isMobileSidebarOpen">
       <template #brand>
         <RouterLink to="/" class="navbar-item is-brand">
           <AnimatedLogo width="38px" height="38px" />
@@ -73,41 +70,20 @@ watch(
     </MobileNavbar>
 
     <!-- Mobile sidebar links -->
-    <MobileSidebar
-      :is-open="isMobileSidebarOpen"
-      @toggle="isMobileSidebarOpen = !isMobileSidebarOpen"
-    >
+    <MobileSidebar :is-open="isMobileSidebarOpen" @toggle="isMobileSidebarOpen = !isMobileSidebarOpen">
       <template #links>
         <li>
-          <a
-            :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
-            aria-label="Display dashboard content"
-            tabindex="0"
-            @keydown.space.prevent="activeMobileSubsidebar = 'dashboard'"
-            @click="activeMobileSubsidebar = 'dashboard'"
-          >
+          <a :class="[activeMobileSubsidebar === 'academic' && 'is-active']" aria-label="Display academic content" tabindex="0" @keydown.space.prevent="activeMobileSubsidebar = 'academic'" @click="activeMobileSubsidebar = 'academic'">
             <i aria-hidden="true" class="iconify" data-icon="feather:activity"></i>
           </a>
         </li>
         <li>
-          <a
-            aria-label="Display layout content"
-            :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
-            tabindex="0"
-            @keydown.space.prevent="activeMobileSubsidebar = 'layout'"
-            @click="activeMobileSubsidebar = 'layout'"
-          >
+          <a aria-label="Display layout content" :class="[activeMobileSubsidebar === 'layout' && 'is-active']" tabindex="0" @keydown.space.prevent="activeMobileSubsidebar = 'layout'" @click="activeMobileSubsidebar = 'layout'">
             <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
           </a>
         </li>
         <li>
-          <a
-            aria-label="Display element content"
-            :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
-            tabindex="0"
-            @keydown.space.prevent="activeMobileSubsidebar = 'elements'"
-            @click="activeMobileSubsidebar = 'elements'"
-          >
+          <a aria-label="Display element content" :class="[activeMobileSubsidebar === 'elements' && 'is-active']" tabindex="0" @keydown.space.prevent="activeMobileSubsidebar = 'elements'" @click="activeMobileSubsidebar = 'elements'">
             <i aria-hidden="true" class="iconify" data-icon="feather:box"></i>
           </a>
         </li>
@@ -131,12 +107,7 @@ watch(
 
       <template #bottom-links>
         <li>
-          <a
-            aria-label="Display search panel"
-            tabindex="0"
-            @keydown.space.prevent="panels.setActive('search')"
-            @click="panels.setActive('search')"
-          >
+          <a aria-label="Display search panel" tabindex="0" @keydown.space.prevent="panels.setActive('search')" @click="panels.setActive('search')">
             <i aria-hidden="true" class="iconify" data-icon="feather:search"></i>
           </a>
         </li>
@@ -151,18 +122,10 @@ watch(
     <!-- Mobile subsidebar links -->
     <Transition name="slide-x">
       <KeepAlive>
-        <LayoutsMobileSubsidebar
-          v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layout'"
-        />
-        <DashboardsMobileSubsidebar
-          v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'dashboard'"
-        />
-        <ComponentsMobileSubsidebar
-          v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'components'"
-        />
-        <ElementsMobileSubsidebar
-          v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'elements'"
-        />
+        <LayoutsMobileSubsidebar v-if="isMobileSidebarOpen && activeMobileSubsidebar === 'layout'" />
+        <DashboardsMobileSubsidebar v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'academic'" />
+        <ComponentsMobileSubsidebar v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'components'" />
+        <ElementsMobileSubsidebar v-else-if="isMobileSidebarOpen && activeMobileSubsidebar === 'elements'" />
       </KeepAlive>
     </Transition>
 
@@ -171,85 +134,45 @@ watch(
 
     <Sidebar :theme="props.theme" :is-open="isDesktopSidebarOpen">
       <template #links>
-        <!-- Dashboards -->
+        <!-- Academica -->
         <li>
-          <a
-            :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']"
-            data-content="Dashboards"
-            aria-label="View dashboards"
-            tabindex="0"
-            @keydown.space.prevent="switchSidebar('dashboard')"
-            @click="switchSidebar('dashboard')"
-          >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:activity"
-            ></i>
+          <a  :class="[activeMobileSubsidebar === 'academic' && 'is-active']" data-content="Dashboards" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('academic')" @click="switchSidebar('academic')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="fa:graduation-cap"></i>
           </a>
         </li>
 
         <!-- Layouts -->
         <li>
-          <a
-            :class="[activeMobileSubsidebar === 'layout' && 'is-active']"
-            data-content="Layouts"
-            aria-label="View layouts"
-            tabindex="0"
-            @keydown.space.prevent="switchSidebar('layout')"
-            @click="switchSidebar('layout')"
-          >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:grid"
-            ></i>
+          <a :class="[activeMobileSubsidebar === 'layout' && 'is-active']" data-content="Layouts" aria-label="View layouts" tabindex="0" @keydown.space.prevent="switchSidebar('layout')" @click="switchSidebar('layout')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:grid"></i>
           </a>
         </li>
 
         <!-- Elements -->
         <li>
-          <a
-            :class="[activeMobileSubsidebar === 'elements' && 'is-active']"
-            data-content="Elements"
-            aria-label="View elements"
-            tabindex="0"
-            @keydown.space.prevent="switchSidebar('elements')"
-            @click="switchSidebar('elements')"
-          >
+          <a :class="[activeMobileSubsidebar === 'elements' && 'is-active']" data-content="Elements" aria-label="View elements" tabindex="0" @keydown.space.prevent="switchSidebar('elements')" @click="switchSidebar('elements')">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:box"></i>
           </a>
         </li>
 
         <!-- Components -->
         <li>
-          <a
-            :class="[activeMobileSubsidebar === 'components' && 'is-active']"
-            data-content="Components"
-            aria-label="View components"
-            tabindex="0"
-            @keydown.space.prevent="switchSidebar('components')"
-            @click="switchSidebar('components')"
-          >
+          <a :class="[activeMobileSubsidebar === 'components' && 'is-active']" data-content="Components" aria-label="View components" tabindex="0" @keydown.space.prevent="switchSidebar('components')" @click="switchSidebar('components')">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:cpu"></i>
           </a>
         </li>
 
         <!-- Messaging -->
-        <li>
+        <!-- <li>
           <RouterLink id="open-schedule" to="/school/schedule" data-content="Schedule">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:calendar"></i>
           </RouterLink>
         </li>
         <li>
           <RouterLink id="open-messages" to="/messaging-v1" data-content="Messaging">
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:message-circle"
-            ></i>
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:message-circle"></i>
           </RouterLink>
-        </li>
+        </li> -->
       </template>
 
       <template #bottom-links>
@@ -260,42 +183,18 @@ watch(
 
         <!-- Search -->
         <li class="right-panel-trigger is-hidden-touch">
-          <a
-            aria-label="Display search panel"
-            data-content="Search"
-            tabindex="0"
-            @keydown.space.prevent="panels.setActive('search')"
-            @click="panels.setActive('search')"
-          >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather-search"
-            />
+          <a aria-label="Display search panel" data-content="Search" tabindex="0" @keydown.space.prevent="panels.setActive('search')" @click="panels.setActive('search')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-search" />
           </a>
-          <a
-            aria-label="Close all panels"
-            class="is-hidden is-inactive"
-            tabindex="0"
-            @keydown.space.prevent="panels.close()"
-            @click="panels.close()"
-          >
+          <a aria-label="Close all panels" class="is-hidden is-inactive" tabindex="0" @keydown.space.prevent="panels.close()" @click="panels.close()">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-x" />
           </a>
         </li>
 
         <!-- Settings -->
         <li class="is-hidden-touch">
-          <RouterLink
-            id="open-settings"
-            to="/sidebar/layouts/profile-settings"
-            data-content="Settings"
-          >
-            <i
-              aria-hidden="true"
-              class="iconify sidebar-svg"
-              data-icon="feather:settings"
-            ></i>
+          <RouterLink id="open-settings" to="/sidebar/layouts/profile-settings" data-content="Settings">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:settings"></i>
           </RouterLink>
         </li>
 
@@ -306,24 +205,13 @@ watch(
       </template>
     </Sidebar>
 
+        <!-- <DashboardsSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'academic'" @close="isDesktopSidebarOpen = false" /> -->
     <Transition name="slide-x">
       <KeepAlive>
-        <ComponentsSubsidebar
-          v-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'components'"
-          @close="isDesktopSidebarOpen = false"
-        />
-        <ElementsSubsidebar
-          v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'elements'"
-          @close="isDesktopSidebarOpen = false"
-        />
-        <DashboardsSubsidebar
-          v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'dashboard'"
-          @close="isDesktopSidebarOpen = false"
-        />
-        <LayoutsSubsidebar
-          v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'layout'"
-          @close="isDesktopSidebarOpen = false"
-        />
+        <ComponentsSubsidebar v-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'components'" @close="isDesktopSidebarOpen = false" />
+        <ElementsSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'elements'" @close="isDesktopSidebarOpen = false" />
+        <AcademicSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'academic'" @close="isDesktopSidebarOpen = false" />
+        <LayoutsSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'layout'" @close="isDesktopSidebarOpen = false" />
       </KeepAlive>
     </Transition>
 
@@ -340,12 +228,7 @@ watch(
         <VPageContent v-else class="is-relative">
           <div class="page-title has-text-centered">
             <!-- Sidebar Trigger -->
-            <div
-              class="vuero-hamburger nav-trigger push-resize"
-              tabindex="0"
-              @keydown.space.prevent="isDesktopSidebarOpen = !isDesktopSidebarOpen"
-              @click="isDesktopSidebarOpen = !isDesktopSidebarOpen"
-            >
+            <div class="vuero-hamburger nav-trigger push-resize" tabindex="0" @keydown.space.prevent="isDesktopSidebarOpen = !isDesktopSidebarOpen" @click="isDesktopSidebarOpen = !isDesktopSidebarOpen">
               <span class="menu-toggle has-chevron">
                 <span :class="[isDesktopSidebarOpen && 'active']" class="icon-box-toggle">
                   <span class="rotate">
@@ -363,14 +246,7 @@ watch(
 
             <Toolbar class="desktop-toolbar">
               <ToolbarNotification />
-
-              <a
-                class="toolbar-link right-panel-trigger"
-                aria-label="View activity panel"
-                tabindex="0"
-                @keydown.space.prevent="panels.setActive('activity')"
-                @click="panels.setActive('activity')"
-              >
+              <a class="toolbar-link right-panel-trigger" aria-label="View activity panel" tabindex="0" @keydown.space.prevent="panels.setActive('activity')" @click="panels.setActive('activity')">
                 <i aria-hidden="true" class="iconify" data-icon="feather:grid"></i>
               </a>
             </Toolbar>

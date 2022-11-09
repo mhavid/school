@@ -7,6 +7,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AcademicMobileSubsidebar: typeof import('./src/layouts/mobile-subsidebars/AcademicMobileSubsidebar.vue')['default']
+    AcademicSubsidebar: typeof import('./src/layouts/sidebar-subsidebar/AcademicSubsidebar.vue')['default']
     AccordionCollapseDocumentation: typeof import('./documentation/collapse/accordion-collapse-documentation.md')['default']
     AccordionCollapsePropsDocumentation: typeof import('./documentation/collapse/accordion-collapse-props-documentation.md')['default']
     AccordionCollapseSlotsDocumentation: typeof import('./documentation/collapse/accordion-collapse-slots-documentation.md')['default']

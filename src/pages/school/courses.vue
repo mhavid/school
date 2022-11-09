@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { useCourses } from '/@src/stores/courses'
+import { useNotyf } from '/@src/composable/useNotyf'
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 const viewWrapper = useViewWrapper()
+const notif:any = useNotyf()
+
 viewWrapper.setPageTitle('Courses')
 useHead({
   title: 'Course',
@@ -38,6 +41,16 @@ const fnShowModalTeacher=(id:number, teachers:[])=>{
     tagTeacher.value = teachers
     modalTeacher.value = true
 }
+
+const fnUpdateTeacher=()=>{
+  courses.storeTeacher({
+    id_user : tagTeacher.value,
+    id_course : selectedCourse.value
+  }).then(()=>{
+    modalTeacher.value = false
+    notif.success('Update Succesfully')
+  })
+}
 </script>
 
 <template>
@@ -61,7 +74,8 @@ const fnShowModalTeacher=(id:number, teachers:[])=>{
                 </div>
             </template>
             <template #action>
-                <VButton color="primary" raised>Update</VButton>
+                <VButton v-if="courses.loading_teacher" color="primary" loading raised>Update</VButton>
+                <VButton v-else color="primary" raised @click="fnUpdateTeacher">Update</VButton>
             </template>
         </VModal>
     <div class="tile-grid-toolbar">

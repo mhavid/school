@@ -49,4 +49,14 @@ export async function getTeacher(api: AxiosInstance): Promise<{ data: StateCours
     return response
 }
 
+export async function saveTeacher(api: AxiosInstance, param:any): Promise<{ data: StateCourses}> {
+    let params = {
+        id_school : useStorage('id_school', '').value,
+        id_user : param.id_user || null,
+        id_course : param.id_course || null
+    }
+    const response:any = await api.post(`/teacher/add`, params)
+    return response
+}
+
 

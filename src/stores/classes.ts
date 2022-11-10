@@ -9,6 +9,7 @@ export const useClasses = defineStore('classes', () => {
     const loading2 = ref(false)
     const students = ref([])
     const teachers = ref([])
+    const wali = ref([])
     const classes = ref([])
 
     async function fetchDataClass(data: object) {
@@ -17,6 +18,7 @@ export const useClasses = defineStore('classes', () => {
         try {
             const response = await getDataClass(api, data)
             students.value = response.data.data.students
+            teachers.value = response.data.data.wali_kelas
             loading.value = false
         } finally {
             loading.value = false

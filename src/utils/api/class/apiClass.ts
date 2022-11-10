@@ -3,7 +3,7 @@ import { useStorage } from '@vueuse/core';
 export interface DC {
   data : {
     students : []
-    teachers : []
+    wali_kelas : []
   },
   meta: {
     status: number

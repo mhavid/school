@@ -5,8 +5,8 @@ import { useI18n } from 'vue-i18n'
 const { locale, t } = useI18n()
 
 import { useViewWrapper } from '/@src/stores/viewWrapper'
-import { useClasses } from '/@src/stores/classes'
-const classes = useClasses()
+import { useTeachers } from '/@src/stores/teachers'
+const teachers = useTeachers()
 
 const viewWrapper = useViewWrapper()
 viewWrapper.setPageTitle(t('menu.teachers'))
@@ -15,47 +15,21 @@ useHead({
   title: t('menu.teachers'),
 })
 
-import { jobs } from '/@src/data/dashboards/jobs'
-import { userList } from '/@src/data/widgets/list/userList'
-
-export type Job = 'web-developer' | 'uiux-designer' | 'backend-developer'
-
-const selectedClass = ref()
-const selectedDay = ref()
-const search = ref('')
-const dayOptions = [
-    { value : 'MONDAY', label : 'Senin' },
-    { value : 'TUESDAY', label : 'Selasa' },
-    { value : 'WEDNESDAY', label : 'Rabu' },
-    { value : 'THURSDAY', label : 'Kamis' },
-    { value : 'FRIDAY', label : 'Jumat' },
-    { value : 'SATURDAY', label : 'Sabtu' },
-    { value : 'SUNDAY', label : 'Minggu' },
-]
-
 onMounted(()=>{
   Promise.all(
-    [
-      classes.fetchDataClass({}),
-      classes.fetchClass()
-    ]
+    [ teachers.fetchTeacher()]
   )
 })
 
-const filterClass = ()=>{
-  classes.fetchDataClass({
-    class : selectedClass.value,
-    date  : selectedDay.value
-  })
-}
+const search = ref('')
 
-const filteredStudent = computed(() => {
+const filteredTeachers = computed(() => {
   if (!search.value) {
-    if(classes.students == undefined) return []
-    return classes.students
+    if(teachers.data == undefined) return []
+    return teachers.data
   } else {
     const filterRe = new RegExp(search.value, 'i')
-    return classes.students.filter((item:any) => {
+    return teachers.data.filter((item:any) => {
       return (
         item.name.match(filterRe) //||
       )
@@ -63,127 +37,76 @@ const filteredStudent = computed(() => {
   }
 })
 
+const fnTagColor=(index:number = 0)=>{
+  const color = ['purple', 'info', 'green', 'warning', 'danger', 'orange', 'blue', 'success', 'primary', 'white', 'light']
+  return color[index]
+}
+
 </script>
 
 <template>
-  <div class="jobs-dashboard">
-    <div class="jobs-dashboard-wrapper">
-      <!--Search toolbar -->
-      <div class="search-menu">
-        <div class="search-bar">
-          <VField class="is-autocomplete-select is-curved-select">
-            <VControl icon="feather:users">
-              <Multiselect
-                v-model="selectedClass"
-                :searchable="true"
-                :create-tag="false"
-                :options="classes.classes"
-                placeholder=""
-              />
-            </VControl>
-          </VField>
-        </div>
-        <div class="search-bar pl-5">
-          <VField class="is-autocomplete-select is-curved-select">
-            <VControl icon="feather:search">
-              <Multiselect
-                v-model="selectedDay"
-                :searchable="true"
-                :create-tag="false"
-                :options="dayOptions"
-                placeholder=""
-              />
-            </VControl>
-          </VField>
-        </div>
-        <button class="search-button" @click="filterClass">Search</button>
-      </div>
+  <div class="teachers-dashboard">
+    <div class="teachers-dashboard-wrapper">
 
       <!--Dashboard content -->
       <div class="main-container">
-        <!--Left Alert -->
-        <div class="search-type">
-          <!--Left filters block -->
-          <div class="job-time pt-0">
-            <div class="job-time-title mb-3">Wali Kelas</div>
-            <div class="job-card">
-                <div class="has-text-centered">
-                    <img class="job-card-logo" src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" alt="" />
-                </div>
-                <div class="job-card-title mt-2 has-text-centered">Wali Kelas</div>
-                <div class="job-card-subtitle has-text-centered">Mohammed John Doel Jr</div>
-                <div class="job-card-buttons">
-                    <VButtons>
-                      <VButton color="info" raised>Detail</VButton>
-                      <VButton color="info" raised>Messages</VButton>
-                    </VButtons>
-                </div>
-              </div>
-          </div>
-          <div class="job-time">
-            <div class="job-time-title">Mata Pelajaran</div>
-            <div class="job-wrapper">
-              <listWidgetUserList :users="userList" />
-            </div>
-          </div>
-
-          <div class="alert mt-4">
-            XXX
-          </div>
-        </div>
-
         <!--Results-->
-        <div class="searched-jobs">
+        <div class="searched-teachers">
           <!--Results toolbar-->
 
           <div class="searched-bar">
-            <div class="searched-count">Showing {{ filteredStudent.length ?? 0 }} Students</div>
+            <div class="searched-count">{{t('pagination.show')}} <strong>{{ filteredTeachers.length ?? 0 }}</strong> {{t('menu.teachers')}}</div>
             <div class="searched-link">
-                <VField>
-                    <VControl icon="feather:search">
-                        <VInput v-model="search" type="text" placeholder="Search Student" />
-                    </VControl>
-                </VField>
+              <VField>
+                <VControl icon="feather:search">
+                  <VInput v-model="search" type="text" :placeholder="t('teacher.search')" />
+                </VControl>
+              </VField>
             </div>
           </div>
 
           <!--Results content-->
-          <div class="job-cards" v-if="classes.loading">
+          <div class="job-cards-modified" v-if="teachers.loading">
             <LoaderClass v-for="a in 30" :key="a" />
           </div>
-          <div v-if="!filteredStudent.length">
-            <VPlaceholderPage title="Maaf, data tidak ditemukan" subtitle="Silahkan mencari dengan filter yang lain">
+          <div v-if="!filteredTeachers.length">
+            <VPlaceholderPage :title="t('notfound.data')" :subtitle="t('notfound.otherkeyword')">
               <template #image>
                 <img class="light-image empty-image" src="/@src/assets/illustrations/placeholders/search-7.svg"/>
                 <img class="dark-image empty-image" src="/@src/assets/illustrations/placeholders/search-7-dark.svg"/>
               </template>
             </VPlaceholderPage>
           </div>
-          <div v-else class="job-cards">
+          <div v-else class="job-cards-modified">
             <!--Card-->
-            <div v-for="(student, index) in filteredStudent" :key="index" class="job-card">
-              <!-- <div class="job-card-header has-text-centered"> -->
+            <div v-for="(teacher, index) in filteredTeachers" :key="index" class="job-card">
               <div class="has-text-centered">
-                <img class="job-card-logo" :src="student.foto" alt="" />
+                <VAvatar class="" :picture="teacher.foto" size="big" />
               </div>
-              <div class="job-card-title mt-2 has-text-centered">{{ student.name }}</div>
-              <div class="job-card-subtitle has-text-centered">{{ student.email }}</div>
-              <div class="job-detail-buttons">
-                <!-- <VTags>
+              <div class="job-card-title mt-2 has-text-centered">{{ teacher.name }}</div>
+              <div class="job-card-subtitle has-text-centered">
+                <VTag class="mx-1" v-for="wali in teacher.class" :key="wali" color="solid" :label="wali.name"/>
+              </div>
+              <div class="job-card-buttons-modified">
+                <VButtons>
+                  <VButton color="primary" raised>{{t('button.detail')}}</VButton>
+                  <VButton color="info" raised><i class="fa fa-pencil-alt"></i></VButton>
+                  <VButton color="danger" raised><i class="fa fa-trash"></i></VButton>
+                </VButtons>
+              </div>
+              <div class="is-divider"></div>
+              <div class="job-card-title">{{t('menu.courses')}}</div>
+              <div class="job-detail-buttons has-text-centered mt-2">
+                <!-- <VTags> -->
                   <VTag
-                    v-for="(category, catIndex) in job.categories"
-                    :key="catIndex"
-                    color="solid"
-                    :label="category.name"
+                    class="ml-1 mb-1"
+                    v-for="(course, index) in teacher.courses"
+                    :key="index"
+                    :color="fnTagColor(index)"
+                    :label="course.name"
                     curved
                   />
-                </VTags> -->
-              </div>
-              <div class="job-card-buttons">
-                <VButtons>
-                  <VButton color="primary" raised>Detail</VButton>
-                  <VButton color="primary" raised>Messages</VButton>
-                </VButtons>
+                <!-- </VTags> -->
               </div>
             </div>
           </div>
@@ -210,13 +133,13 @@ const filteredStudent = computed(() => {
   --input-color: var(--white);
 }
 
-.jobs-dashboard {
+.teachers-dashboard {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   overflow: hidden;
 
-  .jobs-dashboard-wrapper {
+  .teachers-dashboard-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -389,11 +312,11 @@ const filteredStudent = computed(() => {
       }
     }
 
-    .searched-jobs {
+    .searched-teachers {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
-      padding-left: 2.5rem;
+      // padding-left: 2.5rem;
     }
 
     .searched-bar {
@@ -409,15 +332,15 @@ const filteredStudent = computed(() => {
       }
     }
 
-    .job-cards {
+    .job-cards-modified {
       padding-top: 20px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 1.5rem;
       grid-row-gap: 1.5rem;
 
       @media screen and (max-width: 1212px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
       @media screen and (max-width: 930px) {
         grid-template-columns: repeat(1, 1fr);
@@ -435,16 +358,6 @@ const filteredStudent = computed(() => {
         transform: translateY(-5px);
       }
 
-      .job-card-header {
-        display: flex;
-        align-items: flex-start;
-      }
-
-      .job-card-logo {
-        width: 80px;
-        height: 80px;
-      }
-
       .job-card-title {
         font-family: var(--font-alt);
         font-weight: 600;
@@ -460,14 +373,14 @@ const filteredStudent = computed(() => {
         margin-bottom: 1rem;
       }
 
-      .job-card-buttons {
+      .job-card-buttons-modified {
         margin-top: 1rem;
 
         .buttons {
           justify-content: space-between;
 
           .v-button {
-            width: 48%;
+            width: 31%;
           }
         }
       }
@@ -476,7 +389,7 @@ const filteredStudent = computed(() => {
 }
 
 .is-dark {
-  .jobs-dashboard {
+  .teachers-dashboard {
     .job-card {
       @include vuero-card--dark;
     }
@@ -496,19 +409,19 @@ const filteredStudent = computed(() => {
 }
 
 @media screen and (max-width: 620px) {
-  .job-cards {
+  .job-cards-modified {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media screen and (max-width: 730px) {
-  .job-cards {
+  .job-cards-modified {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 767px) {
-  .jobs-dashboard {
+  .teachers-dashboard {
     .search-menu {
       flex-direction: column;
       height: auto;
@@ -541,7 +454,7 @@ const filteredStudent = computed(() => {
         display: none;
       }
 
-      .searched-jobs {
+      .searched-teachers {
         padding-left: 0;
       }
     }

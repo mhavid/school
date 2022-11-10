@@ -1,34 +1,33 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { ref, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+const { locale, t } = useI18n()
 
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { useClasses } from '/@src/stores/classes'
 const classes = useClasses()
 
 const viewWrapper = useViewWrapper()
-viewWrapper.setPageTitle('Classes')
+viewWrapper.setPageTitle(t('menu.classes'))
 
 useHead({
-  title: 'Class',
+  title: t('menu.classes'),
 })
 
-import { jobs } from '/@src/data/dashboards/jobs'
 import { userList } from '/@src/data/widgets/list/userList'
 
-export type Job = 'web-developer' | 'uiux-designer' | 'backend-developer'
-
-const selectedClass = ref()
+const selectedClass = ref(null)
 const selectedDay = ref()
 const search = ref('')
 const dayOptions = [
-    { value : 'MONDAY', label : 'Senin' },
-    { value : 'TUESDAY', label : 'Selasa' },
-    { value : 'WEDNESDAY', label : 'Rabu' },
-    { value : 'THURSDAY', label : 'Kamis' },
-    { value : 'FRIDAY', label : 'Jumat' },
-    { value : 'SATURDAY', label : 'Sabtu' },
-    { value : 'SUNDAY', label : 'Minggu' },
+    { value : 'MONDAY', label : t('days.monday') },
+    { value : 'TUESDAY', label : t('days.tuesday') },
+    { value : 'WEDNESDAY', label : t('days.wednesday') },
+    { value : 'THURSDAY', label : t('days.thursday') },
+    { value : 'FRIDAY', label : t('days.friday') },
+    { value : 'SATURDAY', label : t('days.saturday') },
+    { value : 'SUNDAY', label : t('days.sunday') },
 ]
 
 onMounted(()=>{
@@ -64,8 +63,8 @@ const filteredStudent = computed(() => {
 </script>
 
 <template>
-  <div class="jobs-dashboard">
-    <div class="jobs-dashboard-wrapper">
+  <div class="class-dashboard">
+    <div class="class-dashboard-wrapper">
       <!--Search toolbar -->
       <div class="search-menu">
         <div class="search-bar">
@@ -94,32 +93,37 @@ const filteredStudent = computed(() => {
             </VControl>
           </VField>
         </div>
-        <button class="search-button" @click="filterClass">Search</button>
+        <button class="search-button" @click="filterClass">{{t('button.filter')}}</button>
       </div>
 
       <!--Dashboard content -->
       <div class="main-container">
         <!--Left Alert -->
         <div class="search-type">
+          <div class="alert has-text-centered">
+            <VButton class="" raised color="primary">
+              <i class="fa fa-plus-circle"></i> {{t('class.addclass')}}
+            </VButton>
+          </div>
           <!--Left filters block -->
-          <div class="job-time pt-0">
-            <div class="job-time-title mb-3">Wali Kelas</div>
+          <div class="job-time pt-0" v-for="wali, index in classes.teachers" :key="index">
+            <div class="job-time-title mb-3">{{t('class.wali')}}</div>
             <div class="job-card">
                 <div class="has-text-centered">
-                    <img class="job-card-logo" src="https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png" alt="" />
+                    <img class="job-card-logo" :src="wali.foto" alt="" />
                 </div>
-                <div class="job-card-title mt-2 has-text-centered">Wali Kelas</div>
-                <div class="job-card-subtitle has-text-centered">Mohammed John Doel Jr</div>
+                <div class="job-card-title mt-2 has-text-centered">{{t('class.wali')}}</div>
+                <div class="job-card-subtitle has-text-centered">{{wali.wali}}</div>
                 <div class="job-card-buttons">
                     <VButtons>
-                      <VButton color="info" raised>Detail</VButton>
-                      <VButton color="info" raised>Messages</VButton>
+                      <VButton color="info" raised>{{t('button.detail')}}</VButton>
+                      <VButton color="info" raised>{{wali.name}}</VButton>
                     </VButtons>
                 </div>
               </div>
           </div>
           <div class="job-time">
-            <div class="job-time-title">Mata Pelajaran</div>
+            <div class="job-time-title">{{t('menu.courses')}}</div>
             <div class="job-wrapper">
               <listWidgetUserList :users="userList" />
             </div>
@@ -131,17 +135,20 @@ const filteredStudent = computed(() => {
         </div>
 
         <!--Results-->
-        <div class="searched-jobs">
+        <div class="searched-class">
           <!--Results toolbar-->
 
           <div class="searched-bar">
-            <div class="searched-count">Showing {{ filteredStudent.length ?? 0 }} Students</div>
-            <div class="searched-link">
+            <div class="searched-count">{{t('pagination.show')}} {{ filteredStudent.length ?? 0 }} {{t('menu.student')}}</div>
+            <div class="is-flex">
+              <VButton v-if="selectedClass != null" class="mr-2" color="primary"> {{t('class.addstudent')}} </VButton>
+              <div class="searched-link">
                 <VField>
-                    <VControl icon="feather:search">
-                        <VInput v-model="search" type="text" placeholder="Search Student" />
-                    </VControl>
+                  <VControl icon="feather:search">
+                      <VInput v-model="search" type="text" :placeholder="t('class.search')" />
+                  </VControl>
                 </VField>
+              </div>
             </div>
           </div>
 
@@ -150,7 +157,7 @@ const filteredStudent = computed(() => {
             <LoaderClass v-for="a in 30" :key="a" />
           </div>
           <div v-if="!filteredStudent.length">
-            <VPlaceholderPage title="Maaf, data tidak ditemukan" subtitle="Silahkan mencari dengan filter yang lain">
+            <VPlaceholderPage :title="t('notfound.data')" :subtitle="t('notfound.otherfilter')">
               <template #image>
                 <img class="light-image empty-image" src="/@src/assets/illustrations/placeholders/search-7.svg"/>
                 <img class="dark-image empty-image" src="/@src/assets/illustrations/placeholders/search-7-dark.svg"/>
@@ -208,13 +215,13 @@ const filteredStudent = computed(() => {
   --input-color: var(--white);
 }
 
-.jobs-dashboard {
+.class-dashboard {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   overflow: hidden;
 
-  .jobs-dashboard-wrapper {
+  .class-dashboard-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -387,7 +394,7 @@ const filteredStudent = computed(() => {
       }
     }
 
-    .searched-jobs {
+    .searched-class {
       display: flex;
       flex-direction: column;
       flex-grow: 1;
@@ -474,7 +481,7 @@ const filteredStudent = computed(() => {
 }
 
 .is-dark {
-  .jobs-dashboard {
+  .class-dashboard {
     .job-card {
       @include vuero-card--dark;
     }
@@ -506,7 +513,7 @@ const filteredStudent = computed(() => {
 }
 
 @media screen and (max-width: 767px) {
-  .jobs-dashboard {
+  .class-dashboard {
     .search-menu {
       flex-direction: column;
       height: auto;
@@ -539,7 +546,7 @@ const filteredStudent = computed(() => {
         display: none;
       }
 
-      .searched-jobs {
+      .searched-class {
         padding-left: 0;
       }
     }

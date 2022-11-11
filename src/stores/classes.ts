@@ -1,6 +1,6 @@
 import { ref} from 'vue'
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import { getClass, getDataClass, saveClass } from '/@src/utils/api/class'
+import { getClass, getDataClass, saveClass, getWali, updateWali } from '/@src/utils/api/class'
 import { useApi } from '/@src/composable/useApi'
 
 export const useClasses = defineStore('classes', () => {
@@ -12,6 +12,7 @@ export const useClasses = defineStore('classes', () => {
     const wali = ref([])
     const classes = ref([])
     const loading_add = ref(false)
+    const loading_update = ref(false)
 
     async function fetchDataClass(data: object) {
         if (loading.value) return
@@ -51,16 +52,45 @@ export const useClasses = defineStore('classes', () => {
         }
     }
 
+    async function fetchWali() {
+        try {
+            const response = await getWali(api)
+            wali.value = response.data.data
+        } catch(err){
+            console.error(err)
+        }
+    }
+
+    async function editWali(params:object) {
+        try {
+            loading_update.value = true
+            const response = await updateWali(api, params)
+            wali.value = response.data.data.data
+            teachers.value = response.data.data.wali_kelas
+            loading_update.value = false
+            return response.data
+        } catch(err){
+            loading_update.value = false
+            console.error(err)
+        }
+    }
+
+
+
     return {
         students,
         classes,
         teachers,
+        wali,
         loading,
         loading2,
         loading_add,
+        loading_update,
         fetchDataClass,
         fetchClass,
-        addClass
+        fetchWali,
+        addClass,
+        editWali
     } as const
 })
 

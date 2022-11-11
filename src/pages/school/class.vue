@@ -18,9 +18,11 @@ useHead({
 })
 
 import { userList } from '/@src/data/widgets/list/userList'
+import { number } from 'zod'
 
 const selectedClass = ref(null)
 const selectedDay = ref()
+const selectedWali = ref('')
 const search = ref('')
 const openModalAdd = ref(false)
 const openModalWali = ref(false)
@@ -38,14 +40,15 @@ onMounted(()=>{
   Promise.all(
     [
       classes.fetchDataClass({}),
-      classes.fetchClass()
+      classes.fetchClass(),
+      classes.fetchWali()
     ]
   )
 })
 
 const filterClass = ()=>{
   classes.fetchDataClass({
-    class : selectedClass.value,
+    id_class : selectedClass.value,
     date  : selectedDay.value
   })
 }
@@ -73,6 +76,37 @@ const fnAddclass=(data:any)=>{
     }
   })
 }
+
+const fnShowModalWali=()=>{
+  selectedWali.value = ''
+  openModalWali.value = true
+}
+
+const fnChangeWali=()=>{
+  classes.teachers.forEach((wali:{
+    id_wali:any
+  }) => {
+    if(wali.id_wali != null ) selectedWali.value = wali.id_wali
+  });
+
+  openModalWali.value = true
+}
+
+const fnUpdateWali=()=>{
+  classes.editWali({
+    id_class : selectedClass.value,
+    id_wali : selectedWali.value
+  }).then((res)=>{
+    if(res?.meta.status == 0) notif.error(t('notif.failedupdate'))
+    else notif.success(t('notif.successadd'))
+  })
+  openModalWali.value = false
+}
+
+watch(
+  ()=> selectedClass.value,
+  ()=> filterClass()
+)
 
 </script>
 
@@ -107,7 +141,7 @@ const fnAddclass=(data:any)=>{
             </VControl>
           </VField>
         </div>
-        <button class="search-button" @click="filterClass">{{t('button.filter')}}</button>
+        <!-- <button class="search-button" @click="filterClass">{{t('button.filter')}}</button> -->
       </div>
 
       <!--Dashboard content -->
@@ -124,7 +158,7 @@ const fnAddclass=(data:any)=>{
           <ModalAddClass :loading="classes.loading_add" :open="openModalAdd" @save="fnAddclass" @close="openModalAdd=false" />
           <div class="job-time pt-0" v-for="wali, index in classes.teachers" :key="index">
             <div class="alert has-text-centered mt-2" v-if="wali.foto == null || wali.name == null">
-              <VButton @click="openModalAdd = true" raised color="primary">
+              <VButton @click="fnShowModalWali" raised color="primary">
                 <i class="fa fa-plus-circle"></i> {{t('class.addwali')}}
               </VButton>
             </div>
@@ -134,11 +168,11 @@ const fnAddclass=(data:any)=>{
                 <div class="has-text-centered">
                     <img class="job-card-logo" :src="wali.foto" alt="" />
                 </div>
-                <div class="job-card-title mt-2 has-text-centered">{{t('class.wali')}}</div>
-                <div class="job-card-subtitle has-text-centered">{{wali.wali}}</div>
+                <div class="job-card-title mt-2 has-text-centered">{{wali.wali}}</div>
+                <div class="job-card-subtitle has-text-centered">({{t('class.wali')}})</div>
                 <div class="job-card-buttons">
                     <VButtons>
-                      <VButton color="info" raised>{{t('button.detail')}}</VButton>
+                      <VButton color="info" @click="fnChangeWali" raised>{{t('button.change')}}</VButton>
                       <VButton color="info" raised>{{wali.name}}</VButton>
                     </VButtons>
                 </div>
@@ -208,13 +242,38 @@ const fnAddclass=(data:any)=>{
         </div>
       </div>
     </div>
-    <VModal noscroll title="Edit Teacher in Course" :open="openModalWali" actions="center" @close="openModalWali = false">
+    <VModal noscroll :title="t('class.modal.changewali')" :open="openModalWali" actions="center" @close="openModalWali = false">
       <template #content>
-        <div style="height:160px"></div>
+        <div style="height:160px">
+          <VField>
+            <VControl>
+              <Multiselect
+                v-model="selectedWali"
+                :placeholder="t('class.addwali')"
+                label="name"
+                :options="classes.wali"
+                :searchable="true"
+                track-by="name"
+                :max-height="145"
+              >
+                <template #singlelabel="{ value }">
+                  <div class="multiselect-single-label">
+                    <img class="select-label-icon mr-2" style="width:30px" :src="value.icon" alt="" />
+                    {{ value.name }}
+                  </div>
+                </template>
+                <template #option="{ option }">
+                  <img class="select-option-icon mr-2" style="width:30px" :src="option.icon" alt="" />
+                  {{ option.name }}
+                </template>
+              </Multiselect>
+            </VControl>
+          </VField>
+        </div>
       </template>
       <template #action>
-          <VButton v-if="courses.loading_teacher" color="primary" loading raised>Update</VButton>
-          <VButton v-else color="primary" raised @click="fnUpdateTeacher">Update</VButton>
+          <VButton v-if="classes.loading_update" color="primary" loading raised>{{t('button.update')}}</VButton>
+          <VButton v-else color="primary" raised @click="fnUpdateWali">{{t('button.update')}}</VButton>
       </template>
     </VModal>
   </div>

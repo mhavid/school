@@ -1,6 +1,6 @@
 import { ref} from 'vue'
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import { getClass, getDataClass } from '/@src/utils/api/class'
+import { getClass, getDataClass, saveClass } from '/@src/utils/api/class'
 import { useApi } from '/@src/composable/useApi'
 
 export const useClasses = defineStore('classes', () => {
@@ -11,6 +11,7 @@ export const useClasses = defineStore('classes', () => {
     const teachers = ref([])
     const wali = ref([])
     const classes = ref([])
+    const loading_add = ref(false)
 
     async function fetchDataClass(data: object) {
         if (loading.value) return
@@ -37,14 +38,29 @@ export const useClasses = defineStore('classes', () => {
         }
     }
 
+    async function addClass(params:object) {
+        if (loading_add.value) return
+        loading_add.value = true
+        try {
+            const response = await saveClass(api, params)
+            classes.value = response.data.data.class
+            loading_add.value = false
+            return response.data
+        } finally {
+            loading_add.value = false
+        }
+    }
+
     return {
         students,
         classes,
         teachers,
         loading,
         loading2,
+        loading_add,
         fetchDataClass,
-        fetchClass
+        fetchClass,
+        addClass
     } as const
 })
 

@@ -41,6 +41,16 @@
     "search": "Search Student",
     "wali": "Homeroom Teacher",
     "addclass": "Add Class",
-    "addstudent": "Add Student"
+    "addstudent": "Add Student",
+    "addwali": "Select Homeroom Teacher",
+    "modal": {
+      "classcode": "Class Code",
+      "classname": "Class Name"
+    }
+  },
+  "notif": {
+    "failedadd": "Add Data Failed",
+    "successadd": "Add Data Successfully",
+    "successupdate": "Update Data Successfully"
   }
 }

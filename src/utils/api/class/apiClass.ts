@@ -12,7 +12,7 @@ export interface DC {
   }
 }
 
-export interface C {
+export interface StateClass {
   data : {
     class : []
   },
@@ -35,12 +35,22 @@ export async function getDataClass(api: AxiosInstance, data: any): Promise<{ dat
     return response
 }
 
-export async function getClass(api: AxiosInstance): Promise<{ data: C}> {
+export async function getClass(api: AxiosInstance): Promise<{ data: StateClass}> {
     let params = {
         id_school : useStorage('id_school', '').value,
     }
     const response:any = await api.get(`/class/list`, {params})
     return response
+}
+
+export async function saveClass(api: AxiosInstance, param:any): Promise<{ data: StateClass}> {
+  let params = {
+      id_school : useStorage('id_school', '').value,
+      name : param.name || null,
+      code : param.code || null
+  }
+  const response:any = await api.post(`/class/add`, params)
+  return response
 }
 
 

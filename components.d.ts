@@ -276,6 +276,8 @@ declare module '@vue/runtime-core' {
     MinimalLayout: typeof import('./src/layouts/MinimalLayout.vue')['default']
     MobileNavbar: typeof import('./src/components/navigation/mobile/MobileNavbar.vue')['default']
     MobileSidebar: typeof import('./src/components/navigation/mobile/MobileSidebar.vue')['default']
+    ModalAddClass: typeof import('./src/components/custom/class/ModalAddClass.vue')['default']
+    ModalSelectWali: typeof import('./src/components/custom/class/ModalSelectWali.vue')['default']
     MultiselectAutocompleteDocumentation: typeof import('./documentation/plugins/multiselect/multiselect-autocomplete-documentation.md')['default']
     MultiselectBaseDocumentation: typeof import('./documentation/plugins/multiselect/multiselect-base-documentation.md')['default']
     MultiselectDisabledOptionDocumentation: typeof import('./documentation/plugins/multiselect/multiselect-disabled-option-documentation.md')['default']

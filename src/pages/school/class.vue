@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useHead } from '@vueuse/head'
 import { ref, onMounted } from 'vue'
+import { useNotyf } from '/@src/composable/useNotyf'
+const notif:any = useNotyf()
 import { useI18n } from 'vue-i18n'
 const { locale, t } = useI18n()
 
@@ -20,6 +22,8 @@ import { userList } from '/@src/data/widgets/list/userList'
 const selectedClass = ref(null)
 const selectedDay = ref()
 const search = ref('')
+const openModalAdd = ref(false)
+const openModalWali = ref(false)
 const dayOptions = [
     { value : 'MONDAY', label : t('days.monday') },
     { value : 'TUESDAY', label : t('days.tuesday') },
@@ -59,6 +63,16 @@ const filteredStudent = computed(() => {
     })
   }
 })
+
+const fnAddclass=(data:any)=>{
+  classes.addClass(data).then((res)=>{
+    if(res?.meta.status == 0) notif.error(t('notif.failedadd') +', '+ res.meta.message)
+    else{
+      if(res?.meta.status == 1) notif.success(t('notif.successadd'))
+      openModalAdd.value = false
+    }
+  })
+}
 
 </script>
 
@@ -101,14 +115,22 @@ const filteredStudent = computed(() => {
         <!--Left Alert -->
         <div class="search-type">
           <div class="alert has-text-centered">
-            <VButton class="" raised color="primary">
+            <VButton @click="openModalAdd = true" raised color="primary">
               <i class="fa fa-plus-circle"></i> {{t('class.addclass')}}
             </VButton>
+            <ModalAddClass :loading="classes.loading_add" :open="openModalAdd" @save="fnAddclass" @close="openModalAdd=false" />
           </div>
           <!--Left filters block -->
+          <ModalAddClass :loading="classes.loading_add" :open="openModalAdd" @save="fnAddclass" @close="openModalAdd=false" />
           <div class="job-time pt-0" v-for="wali, index in classes.teachers" :key="index">
-            <div class="job-time-title mb-3">{{t('class.wali')}}</div>
-            <div class="job-card">
+            <div class="alert has-text-centered mt-2" v-if="wali.foto == null || wali.name == null">
+              <VButton @click="openModalAdd = true" raised color="primary">
+                <i class="fa fa-plus-circle"></i> {{t('class.addwali')}}
+              </VButton>
+            </div>
+            <template v-else>
+              <div class="job-time-title mb-3"></div>
+              <div class="job-card">
                 <div class="has-text-centered">
                     <img class="job-card-logo" :src="wali.foto" alt="" />
                 </div>
@@ -121,6 +143,7 @@ const filteredStudent = computed(() => {
                     </VButtons>
                 </div>
               </div>
+            </template>
           </div>
           <div class="job-time">
             <div class="job-time-title">{{t('menu.courses')}}</div>
@@ -173,21 +196,11 @@ const filteredStudent = computed(() => {
               </div>
               <div class="job-card-title mt-2 has-text-centered">{{ student.name }}</div>
               <div class="job-card-subtitle has-text-centered">{{ student.email }}</div>
-              <div class="job-detail-buttons">
-                <!-- <VTags>
-                  <VTag
-                    v-for="(category, catIndex) in job.categories"
-                    :key="catIndex"
-                    color="solid"
-                    :label="category.name"
-                    curved
-                  />
-                </VTags> -->
-              </div>
+              <div class="job-detail-buttons"></div>
               <div class="job-card-buttons">
                 <VButtons>
-                  <VButton color="primary" raised>Detail</VButton>
-                  <VButton color="primary" raised>Messages</VButton>
+                  <VButton color="primary" raised></VButton>
+                  <VButton color="primary" raised></VButton>
                 </VButtons>
               </div>
             </div>
@@ -195,6 +208,15 @@ const filteredStudent = computed(() => {
         </div>
       </div>
     </div>
+    <VModal noscroll title="Edit Teacher in Course" :open="openModalWali" actions="center" @close="openModalWali = false">
+      <template #content>
+        <div style="height:160px"></div>
+      </template>
+      <template #action>
+          <VButton v-if="courses.loading_teacher" color="primary" loading raised>Update</VButton>
+          <VButton v-else color="primary" raised @click="fnUpdateTeacher">Update</VButton>
+      </template>
+    </VModal>
   </div>
 </template>
 

@@ -7,7 +7,12 @@
     "wali" : "Wali Kelas",
     "search": "Cari Siswa",
     "addstudent": "Tambah Siswa",
-    "addclass": "Tambah Kelas"
+    "addclass": "Tambah Kelas",
+    "addwali": "Pilih Wali",
+    "modal": {
+      "classname": "Nama Kelas",
+      "classcode": "Kode Kelas"
+    }
   },
   "menu" : {
     "academic": "Akademik",
@@ -42,5 +47,10 @@
     "data": "Maaf, Data Tidak ditemukan",
     "otherkeyword": "Silahkan mencari dengan kata kunci yang lain",
     "otherfilter": "Silahkan mencari dengan filter yang lain"
+  },
+  "notif":{
+    "successadd": "Tambah data berhasil",
+    "successupdate": "Update data berhasil",
+    "failedadd": "Tambah data gagal"
   }
 }

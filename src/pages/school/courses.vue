@@ -55,29 +55,29 @@ const fnUpdateTeacher=()=>{
 
 <template>
   <div>
-        <VModal noscroll title="Edit Teacher in Course" :open="modalTeacher" actions="center" @close="modalTeacher = false">
-            <template #content>
-                <div style="height:160px">
-                    <VField v-slot="{ id }">
-                        <VControl>
-                        <Multiselect
-                            v-model="tagTeacher"
-                            :attrs="{ id }"
-                            mode="tags"
-                            :searchable="true"
-                            :create-tag="false"
-                            :options="courses?.teachers"
-                            placeholder="Add Teacher"
-                        />
-                        </VControl>
-                    </VField>
-                </div>
-            </template>
-            <template #action>
-                <VButton v-if="courses.loading_teacher" color="primary" loading raised>Update</VButton>
-                <VButton v-else color="primary" raised @click="fnUpdateTeacher">Update</VButton>
-            </template>
-        </VModal>
+    <VModal noscroll title="Edit Teacher in Course" :open="modalTeacher" actions="center" @close="modalTeacher = false">
+        <template #content>
+            <div style="height:160px">
+                <VField v-slot="{ id }">
+                    <VControl>
+                    <Multiselect
+                        v-model="tagTeacher"
+                        :attrs="{ id }"
+                        mode="tags"
+                        :searchable="true"
+                        :create-tag="false"
+                        :options="courses?.teachers"
+                        placeholder="Add Teacher"
+                    />
+                    </VControl>
+                </VField>
+            </div>
+        </template>
+        <template #action>
+            <VButton v-if="courses.loading_teacher" color="primary" loading raised>Update</VButton>
+            <VButton v-else color="primary" raised @click="fnUpdateTeacher">Update</VButton>
+        </template>
+    </VModal>
     <div class="tile-grid-toolbar">
       <VControl icon="feather:search">
         <input v-model="search" class="input custom-text-filter" placeholder="Search..." />

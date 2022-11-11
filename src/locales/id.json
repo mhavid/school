@@ -4,17 +4,18 @@
     "search": "Cari Guru"
   },
   "class": {
-    "wali" : "Wali Kelas",
+    "wali": "Wali Kelas",
     "search": "Cari Siswa",
     "addstudent": "Tambah Siswa",
     "addclass": "Tambah Kelas",
     "addwali": "Pilih Wali",
     "modal": {
       "classname": "Nama Kelas",
-      "classcode": "Kode Kelas"
+      "classcode": "Kode Kelas",
+      "changewali": "Ubah Wali Kelas"
     }
   },
-  "menu" : {
+  "menu": {
     "academic": "Akademik",
     "classes": "Kelas",
     "teachers": "Guru",
@@ -29,9 +30,10 @@
     "delete": "Hapus",
     "search": "Cari",
     "detail": "Detail",
-    "filter": "Saring"
+    "filter": "Saring",
+    "change": "Ganti"
   },
-  "pagination":{
+  "pagination": {
     "show": "Menampilkan"
   },
   "days": {
@@ -48,9 +50,10 @@
     "otherkeyword": "Silahkan mencari dengan kata kunci yang lain",
     "otherfilter": "Silahkan mencari dengan filter yang lain"
   },
-  "notif":{
+  "notif": {
     "successadd": "Tambah data berhasil",
     "successupdate": "Update data berhasil",
-    "failedadd": "Tambah data gagal"
+    "failedadd": "Tambah data gagal",
+    "failedupdate": "Gagal Memperbarui Data"
   }
 }

@@ -11,7 +11,8 @@
     "delete": "Delete",
     "search": "Search",
     "detail": "Detail",
-    "filter": "Filter"
+    "filter": "Filter",
+    "change": "Change"
   },
   "menu": {
     "teachers": "Teacher",
@@ -45,12 +46,14 @@
     "addwali": "Select Homeroom Teacher",
     "modal": {
       "classcode": "Class Code",
-      "classname": "Class Name"
+      "classname": "Class Name",
+      "changewali": "Change Homeroom Teacher"
     }
   },
   "notif": {
     "failedadd": "Add Data Failed",
     "successadd": "Add Data Successfully",
-    "successupdate": "Update Data Successfully"
+    "successupdate": "Update Data Successfully",
+    "failedupdate": "Update Data Failed"
   }
 }

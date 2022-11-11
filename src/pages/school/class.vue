@@ -18,7 +18,6 @@ useHead({
 })
 
 import { userList } from '/@src/data/widgets/list/userList'
-import { number } from 'zod'
 
 const selectedClass = ref(null)
 const selectedDay = ref()

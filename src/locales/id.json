@@ -20,7 +20,12 @@
     "classes": "Kelas",
     "teachers": "Guru",
     "student": "Siswa",
-    "courses": "Mata Pelajaran"
+    "courses": "Mata Pelajaran",
+    "attendance": {
+      "attendance": "Absensi",
+      "data": "Data Absensi",
+      "permit": "Perijinan"
+    }
   },
   "button": {
     "save": "Simpan",

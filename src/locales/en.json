@@ -19,7 +19,12 @@
     "academic": "Academica",
     "classes": "Classes",
     "courses": "Courses",
-    "student": "Students"
+    "student": "Students",
+    "attendance": {
+      "attendance": "Attendance",
+      "data": "Data Attendance",
+      "permit": "Permittance"
+    }
   },
   "pagination": {
     "show": "Showing"

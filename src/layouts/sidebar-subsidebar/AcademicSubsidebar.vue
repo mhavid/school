@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 const openSubsidebarLinks = ref('')
 const emit = defineEmits(['close'])
 </script>
@@ -8,7 +10,7 @@ const emit = defineEmits(['close'])
     <div class="subpanel-header">
       <!-- <ProjectsQuickDropdown   /> -->
 
-      <h3 class="no-mb">Class</h3>
+      <h3 class="no-mb">{{ t('menu.academic') }}</h3>
       <div
         class="panel-close"
         tabindex="0"
@@ -42,9 +44,9 @@ const emit = defineEmits(['close'])
 
         <li class="divider"></li>
 
-        <li><RouterLink to="/school/teachers">Teachers</RouterLink></li>
-        <li><RouterLink to="/school/class">Classes</RouterLink></li>
-        <li><RouterLink to="/school/courses">Courses</RouterLink></li>
+        <li><RouterLink to="/school/teachers">{{ t('menu.teachers') }}</RouterLink></li>
+        <li><RouterLink to="/school/class">{{ t('menu.classes') }}</RouterLink></li>
+        <li><RouterLink to="/school/courses">{{ t('menu.courses') }}</RouterLink></li>
 
       </ul>
     </div>

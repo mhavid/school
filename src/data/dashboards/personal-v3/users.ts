@@ -1,13 +1,13 @@
 export const userStack = [
   {
     id: 5,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
     initials: 'ML',
     color: 'info',
   },
   {
     id: 18,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
     initials: 'EC',
     color: 'warning',
   },

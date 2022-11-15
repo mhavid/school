@@ -7,12 +7,12 @@
     </VField>
 
     <VAvatarStack>
-      <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
+      <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
       <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg9.jpg" />
-      <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg" />
+      <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png" />
       <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
-      <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg" />
-      <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg" />
+      <VAvatar size="small" picture="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg" />
+      <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg" />
     </VAvatarStack>
 
     <a class="button v-button is-primary is-raised is-bold">

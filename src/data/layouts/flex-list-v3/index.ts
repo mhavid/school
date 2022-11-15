@@ -31,7 +31,7 @@ export const classes = [
     },
     author: {
       id: 12,
-      picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
       username: 'Joshua S.',
       initials: 'JS',
       color: 'info',
@@ -50,7 +50,7 @@ export const classes = [
     },
     author: {
       id: 12,
-      picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
       username: 'Mary L.',
       initials: 'ML',
       color: 'info',
@@ -69,7 +69,7 @@ export const classes = [
     },
     author: {
       id: 18,
-      picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
       username: 'Esteban C.',
       initials: 'EC',
       color: 'info',
@@ -88,7 +88,7 @@ export const classes = [
     },
     author: {
       id: 18,
-      picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+      picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
       username: 'Esteban C.',
       initials: 'EC',
       color: 'info',

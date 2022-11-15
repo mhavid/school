@@ -46,9 +46,9 @@ const panels = usePanels()
 
             <div class="participants-inner">
               <div class="avatar-stack">
-                <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
+                <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
                 <VAvatar picture="/images/avatars/svg/vuero-1.svg" />
-                <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg" />
+                <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg" />
               </div>
 
               <button>

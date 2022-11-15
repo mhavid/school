@@ -11,7 +11,7 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -29,7 +29,7 @@ export const users = [
       },
       {
         id: 3,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         initials: 'ML',
         color: 'danger',
       },
@@ -45,7 +45,7 @@ export const users = [
     id: 1,
     username: 'Jimmy H.',
     position: 'Project Manager',
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Business',
@@ -63,7 +63,7 @@ export const users = [
     id: 2,
     username: 'Melany W.',
     position: 'Web Developer',
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+    picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'San Jose, CA',
     industry: 'Design',
@@ -77,7 +77,7 @@ export const users = [
       },
       {
         id: 7,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
         initials: 'AC',
         color: 'h-purple',
       },
@@ -111,7 +111,7 @@ export const users = [
     id: 3,
     username: 'Joshua S.',
     position: 'Backend Developer',
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Las Vegas, NV',
     industry: 'Accounting',
@@ -119,7 +119,7 @@ export const users = [
     contacts: [
       {
         id: 7,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+        picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
         initials: 'TS',
         color: 'info',
       },
@@ -129,7 +129,7 @@ export const users = [
     id: 4,
     username: 'Tara S.',
     position: 'UI/UX Designer',
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+    picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     location: 'Los Angeles, CA',
     industry: 'Finance',
@@ -137,7 +137,7 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -149,7 +149,7 @@ export const users = [
       },
       {
         id: 17,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -191,7 +191,7 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -203,7 +203,7 @@ export const users = [
       },
       {
         id: 17,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -239,7 +239,7 @@ export const users = [
     contacts: [
       {
         id: 0,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -281,19 +281,19 @@ export const users = [
     contacts: [
       {
         id: 25,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
       {
         id: 13,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+        picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
         initials: 'TS',
         color: 'info',
       },
       {
         id: 17,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -313,7 +313,7 @@ export const users = [
     contacts: [
       {
         id: 25,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'MW',
         color: 'info',
       },
@@ -331,7 +331,7 @@ export const users = [
     contacts: [
       {
         id: 7,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
         initials: 'AC',
         color: 'info',
       },

@@ -82,7 +82,7 @@ useHead({
       <div class="column is-4">
         <VCardMedia
           image="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/apps/3.png"
-          avatar="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg"
+          avatar="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png"
           badge="/images/icons/flags/united-states-of-america.svg"
           title="Joshua S."
           subtitle="Backend Developer"

@@ -17,7 +17,7 @@ const emit = defineEmits(['toggleMobileConversation'])
       <div class="chat-area-group">
         <img
           class="chat-area-profile"
-          src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg"
+          src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg"
           alt=""
           data-user-popover="6"
           @error.once="onceImageErrored(150)"
@@ -29,7 +29,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg"
+            src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg"
             alt=""
             data-user-popover="6"
             @error.once="onceImageErrored(150)"

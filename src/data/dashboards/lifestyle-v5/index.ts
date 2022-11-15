@@ -15,7 +15,7 @@ export const members = {
     },
     {
       id: 12,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
       badge: '/images/icons/flags/united-states-of-america.svg',
       username: 'Joshua S.',
       fullName: 'Joshua Stevens',
@@ -27,7 +27,7 @@ export const members = {
     },
     {
       id: 5,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
       username: 'Mary L.',
       fullName: 'Mary Lebowski',
@@ -39,7 +39,7 @@ export const members = {
     },
     {
       id: 7,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
       username: 'Alice C.',
       fullName: 'Alice Carasca',
@@ -77,7 +77,7 @@ export const featuredLeft = {
       duration: '05:17',
       author: {
         name: 'Alice C.',
-        avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+        avatar: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
       },
       comments: 3,
     },
@@ -90,7 +90,7 @@ export const featuredLeft = {
       duration: '03:12',
       author: {
         name: 'Tara S.',
-        avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+        avatar: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
       },
       comments: 0,
     },
@@ -109,7 +109,7 @@ export const featuredRight = {
       duration: '04:24',
       author: {
         name: 'Joshua S.',
-        avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+        avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
       },
       comments: 5,
     },
@@ -135,7 +135,7 @@ export const featuredRight = {
       duration: '07:11',
       author: {
         name: 'Mary L.',
-        avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
       },
       comments: 3,
     },
@@ -148,7 +148,7 @@ export const featuredRight = {
       duration: '12:37',
       author: {
         name: 'Esteban C.',
-        avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+        avatar: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
       },
       comments: 9,
     },
@@ -165,7 +165,7 @@ export const feed = [
     duration: '04:24',
     author: {
       name: 'Joshua S.',
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
     },
     comments: 5,
   },
@@ -178,7 +178,7 @@ export const feed = [
     duration: '12:18',
     author: {
       name: 'Mary L.',
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
     },
     comments: 4,
   },
@@ -243,7 +243,7 @@ export const feed = [
     duration: '11:16',
     author: {
       name: 'Dwayne H.',
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
     },
     comments: 0,
   },
@@ -269,7 +269,7 @@ export const feed = [
     duration: '07:16',
     author: {
       name: 'Joshua S.',
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
     },
     comments: 5,
   },
@@ -282,7 +282,7 @@ export const feed = [
     duration: '11:17',
     author: {
       name: 'Melany W.',
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+      avatar: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
     },
     comments: 12,
   },

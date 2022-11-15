@@ -10,7 +10,7 @@ export const projects = [
     team: [
       {
         id: 0,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -28,7 +28,7 @@ export const projects = [
       },
       {
         id: 3,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         initials: 'ML',
         color: 'danger',
       },
@@ -74,7 +74,7 @@ export const projects = [
       },
       {
         id: 7,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
         initials: 'AC',
         color: 'h-purple',
       },
@@ -127,7 +127,7 @@ export const projects = [
       },
       {
         id: 5,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -144,7 +144,7 @@ export const projects = [
     team: [
       {
         id: 18,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
         initials: 'EC',
         color: 'info',
       },
@@ -161,7 +161,7 @@ export const projects = [
     team: [
       {
         id: 0,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -173,7 +173,7 @@ export const projects = [
       },
       {
         id: 17,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -214,7 +214,7 @@ export const projects = [
     team: [
       {
         id: 0,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -226,7 +226,7 @@ export const projects = [
       },
       {
         id: 17,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -261,7 +261,7 @@ export const projects = [
     team: [
       {
         id: 0,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
@@ -302,19 +302,19 @@ export const projects = [
     team: [
       {
         id: 25,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+        picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
         initials: 'AC',
         color: 'info',
       },
       {
         id: 13,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+        picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
         initials: 'TS',
         color: 'info',
       },
       {
         id: 17,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         initials: 'ML',
         color: 'warning',
       },
@@ -331,7 +331,7 @@ export const projects = [
     team: [
       {
         id: 7,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
         initials: 'AC',
         color: 'info',
       },

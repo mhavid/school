@@ -1,13 +1,13 @@
 export const avatarStack1 = [
   {
     id: 12,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
     initials: 'JS',
     color: 'info',
   },
   {
     id: 32,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
     initials: 'JH',
     color: 'success',
   },
@@ -22,7 +22,7 @@ export const avatarStack1 = [
 export const avatarStack2 = [
   {
     id: 7,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
     initials: 'AC',
     color: 'info',
   },
@@ -34,7 +34,7 @@ export const avatarStack2 = [
   },
   {
     id: 18,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
     initials: 'EC',
     color: 'warning',
   },
@@ -49,7 +49,7 @@ export const avatarStack3 = [
   },
   {
     id: 22,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
     initials: 'JH',
     color: 'success',
   },

@@ -12,7 +12,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" />
+              <VAvatar picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -63,7 +63,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg" />
+              <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -76,7 +76,7 @@
               </div>
               <div class="box-end">
                 <VAvatar size="small" color="warning" initials="BT" />
-                <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg" />
+                <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" />
                 <VAvatar size="small" color="info" initials="JD" />
               </div>
             </div>
@@ -92,7 +92,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg" />
+              <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -173,7 +173,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" />
+              <VAvatar picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">
@@ -197,7 +197,7 @@
           <div class="content-wrap">
             <div class="content-box">
               <div class="status"></div>
-              <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg" />
+              <VAvatar picture="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg" />
 
               <div class="box-text">
                 <div class="meta-text">

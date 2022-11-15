@@ -160,7 +160,7 @@ const democheck = ref(['value_2'])
               <li>
                 <div>
                   <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                    <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg" />
+                    <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user18" />
                     </template>
@@ -196,7 +196,7 @@ const democheck = ref(['value_2'])
               <li>
                 <div>
                   <Tippy class="has-help-cursor" interactive :offset="[0, 10]">
-                    <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" />
+                    <VAvatar picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" />
                     <template #content>
                       <UserPopoverContent :user="popovers.user13" />
                     </template>

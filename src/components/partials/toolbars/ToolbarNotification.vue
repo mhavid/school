@@ -44,7 +44,7 @@ const dropdown = useDropdown(dropdownElement)
                   <img
                     class="user-photo"
                     alt=""
-                    src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg"
                     @error.once="onceImageErrored(150)"
                   />
                 </div>
@@ -62,7 +62,7 @@ const dropdown = useDropdown(dropdownElement)
                   <img
                     class="user-photo"
                     alt=""
-                    src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png"
                     @error.once="onceImageErrored(150)"
                   />
                 </div>
@@ -80,7 +80,7 @@ const dropdown = useDropdown(dropdownElement)
                   <img
                     class="user-photo"
                     alt=""
-                    src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg"
+                    src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg"
                     @error.once="onceImageErrored(150)"
                   />
                 </div>
@@ -98,7 +98,7 @@ const dropdown = useDropdown(dropdownElement)
                   <img
                     class="user-photo"
                     alt=""
-                    src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg"
+                    src="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg"
                     @error.once="onceImageErrored(150)"
                   />
                 </div>

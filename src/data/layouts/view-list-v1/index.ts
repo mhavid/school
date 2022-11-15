@@ -6,7 +6,7 @@ export const users = [
     role: 'Project Manager',
     roleColor: 'primary',
     medias: {
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -35,8 +35,8 @@ export const users = [
       posts: 5,
     },
     teams: [
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg' },
       { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg40.jpg' },
     ],
   },
@@ -55,7 +55,7 @@ export const users = [
       replies: 97,
       posts: 16,
     },
-    teams: [{ picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg' }, { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg23.jpg' }],
+    teams: [{ picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg' }, { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg23.jpg' }],
   },
   {
     id: '40',
@@ -73,8 +73,8 @@ export const users = [
       posts: 8,
     },
     teams: [
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg' },
+      { picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg' },
       { picture: '/images/avatars/svg/vuero-1.svg' },
       { picture: '/images/avatars/svg/vuero-1.svg' },
       { picture: '/images/avatars/svg/vuero-1.svg' },
@@ -98,7 +98,7 @@ export const users = [
       replies: 158,
       posts: 54,
     },
-    teams: [{ picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg' }],
+    teams: [{ picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg' }],
   },
   {
     id: '9',
@@ -117,7 +117,7 @@ export const users = [
     },
     teams: [
       { picture: '/images/avatars/svg/vuero-1.svg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
     ],
   },
   {
@@ -127,7 +127,7 @@ export const users = [
     role: 'UI/UX Designer',
     roleColor: 'green',
     medias: {
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -139,13 +139,13 @@ export const users = [
       { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg27.jpg' },
       { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg16.jpg' },
       { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg29.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
     ],
   },
   {
@@ -163,7 +163,7 @@ export const users = [
       replies: 15,
       posts: 2,
     },
-    teams: [{ picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg32.jpg' }, { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg' }],
+    teams: [{ picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg32.jpg' }, { picture: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg' }],
   },
   {
     id: '25',
@@ -172,7 +172,7 @@ export const users = [
     role: 'Web Developer',
     roleColor: 'orange',
     medias: {
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+      avatar: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {
@@ -184,8 +184,8 @@ export const users = [
       { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg26.jpg' },
       { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg38.jpg' },
       { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg21.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
-      { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
+      { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
     ],
   },
   {
@@ -195,7 +195,7 @@ export const users = [
     role: 'Software Engineer',
     roleColor: 'orange',
     medias: {
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
       flag: '/images/icons/flags/united-states-of-america.svg',
     },
     stats: {

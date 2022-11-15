@@ -1,7 +1,7 @@
 export const userStack1 = [
   {
     id: 0,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
     initials: 'AC',
     color: 'info',
   },
@@ -19,7 +19,7 @@ export const userStack1 = [
   },
   {
     id: 3,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
     initials: 'ML',
     color: 'danger',
   },
@@ -31,7 +31,7 @@ export const userStack1 = [
   },
   {
     id: 5,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
     initials: 'VD',
     color: 'warning',
   },
@@ -46,13 +46,13 @@ export const userStack1 = [
 export const userStack2 = [
   {
     id: 5,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
     initials: 'JS',
     color: 'info',
   },
   {
     id: 22,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
     initials: 'JH',
     color: 'info',
   },
@@ -64,7 +64,7 @@ export const userStack2 = [
   },
   {
     id: 3,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
     initials: 'ML',
     color: 'danger',
   },
@@ -76,7 +76,7 @@ export const userStack2 = [
   },
   {
     id: 5,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
     initials: 'VD',
     color: 'warning',
   },
@@ -88,7 +88,7 @@ export const userStack2 = [
   },
   {
     id: 0,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
     initials: 'AC',
     color: 'info',
   },

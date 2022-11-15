@@ -117,7 +117,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
+                  <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user7" />
                   </template>
@@ -133,7 +133,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" />
+                  <VAvatar size="small" picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>
@@ -149,7 +149,7 @@ function getAvatarData(user: UserPopover): VAvatarProps {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg" />
+                  <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user22" />
                   </template>

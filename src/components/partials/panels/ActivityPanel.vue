@@ -75,7 +75,7 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <VAvatar
-                picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg"
+                picture="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png"
                 badge="/images/icons/flags/united-states-of-america.svg"
               />
 
@@ -94,7 +94,7 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <VAvatar
-                picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg"
+                picture="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg"
                 badge="/images/icons/flags/united-states-of-america.svg"
               />
 
@@ -113,7 +113,7 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <VAvatar
-                picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg"
+                picture="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg"
                 badge="/images/icons/flags/united-states-of-america.svg"
               />
 
@@ -132,7 +132,7 @@ const activeTab = ref<TabId>('team')
             <!--Team Member-->
             <div class="team-card">
               <VAvatar
-                picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg"
+                picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg"
                 badge="/images/icons/flags/united-states-of-america.svg"
               />
 
@@ -181,8 +181,8 @@ const activeTab = ref<TabId>('team')
                   <span>5 / 24</span>
 
                   <div class="avatar-stack">
-                    <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg" />
-                    <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
+                    <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg" />
+                    <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
                     <VAvatar size="small" picture="/images/avatars/svg/vuero-1.svg" />
                   </div>
                 </div>
@@ -216,8 +216,8 @@ const activeTab = ref<TabId>('team')
                   <span>28 / 31</span>
 
                   <div class="avatar-stack">
-                    <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" />
-                    <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg" />
+                    <VAvatar size="small" picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" />
+                    <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" />
                   </div>
                 </div>
               </div>
@@ -250,8 +250,8 @@ const activeTab = ref<TabId>('team')
                   <span>25 / 39</span>
 
                   <div class="avatar-stack">
-                    <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
-                    <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg" />
+                    <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
+                    <VAvatar size="small" picture="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg" />
                   </div>
                 </div>
               </div>
@@ -284,7 +284,7 @@ const activeTab = ref<TabId>('team')
                 <div class="timeline-icon">
                   <img
                     class="avatar"
-                    src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg"
                     alt=""
                     @error.once="onceImageErrored(150)"
                   />

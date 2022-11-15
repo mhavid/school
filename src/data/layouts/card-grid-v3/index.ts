@@ -19,7 +19,7 @@ export const projects = [
       },
       {
         id: 18,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -33,7 +33,7 @@ export const projects = [
       },
       {
         id: 7,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',
@@ -182,7 +182,7 @@ export const projects = [
       },
       {
         id: 18,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -324,7 +324,7 @@ export const projects = [
       },
       {
         id: 18,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
         name: 'Esteban C.',
         initials: 'EC',
         color: 'h-purple',
@@ -338,7 +338,7 @@ export const projects = [
       },
       {
         id: 7,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
         name: 'Alice C.',
         initials: 'AC',
         color: 'success',

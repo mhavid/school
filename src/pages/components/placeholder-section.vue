@@ -53,7 +53,7 @@ useHead({
               >
                 <template #image>
                   <VAvatar
-                    picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg"
+                    picture="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg"
                     badge="/images/icons/flags/united-states-of-america.svg"
                   />
                 </template>

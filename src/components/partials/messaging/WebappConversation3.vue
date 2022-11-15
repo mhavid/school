@@ -24,7 +24,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         />
         <img
           class="chat-area-profile"
-          src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg"
+          src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg"
           alt=""
           data-user-popover="6"
           @error.once="onceImageErrored(150)"
@@ -46,7 +46,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg"
+            src="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg"
             alt=""
             data-user-popover="6"
             @error.once="onceImageErrored(150)"
@@ -125,7 +125,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png"
             alt=""
             data-user-popover="2"
             @error.once="onceImageErrored(150)"
@@ -140,7 +140,7 @@ const emit = defineEmits(['toggleMobileConversation'])
         <div class="chat-msg-profile">
           <img
             class="chat-msg-img"
-            src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg"
             alt=""
             data-user-popover="0"
             @error.once="onceImageErrored(150)"

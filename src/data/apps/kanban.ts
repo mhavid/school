@@ -9,7 +9,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'warning',
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
       },
     ],
   },
@@ -33,7 +33,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'danger',
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
       },
       {
         color: undefined,
@@ -53,7 +53,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'success',
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+        picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
       },
     ],
   },
@@ -89,7 +89,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'success',
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
       },
     ],
   },
@@ -101,7 +101,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'danger',
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
       },
       {
         picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg9.jpg',
@@ -116,7 +116,7 @@ export const tasks = reactive([
     participants: [
       {
         color: 'primary',
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+        picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
       },
     ],
   },

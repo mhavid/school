@@ -7,7 +7,7 @@ export const users = [
     role: 'UI/UX Designer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+      avatar: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 65,
@@ -77,7 +77,7 @@ export const users = [
     role: 'Web Developer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+      avatar: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
       badge: '/images/icons/stacks/js.svg',
     },
     progress: 58,
@@ -287,7 +287,7 @@ export const users = [
     role: 'Project Manager',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 29,
@@ -567,7 +567,7 @@ export const users = [
     role: 'Software Engineer',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
       badge: '/images/icons/stacks/csharp.svg',
     },
     progress: 78,
@@ -602,7 +602,7 @@ export const users = [
     role: 'Product Manager',
     bio: 'This is a nice user description that we can use as demo content.',
     medias: {
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
       badge: '/images/icons/flags/united-states-of-america.svg',
     },
     progress: 17,

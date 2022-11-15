@@ -1,7 +1,7 @@
 export const followersList = [
   {
     id: 0,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
     name: 'Alice',
   },
   {
@@ -11,7 +11,7 @@ export const followersList = [
   },
   {
     id: 2,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
     name: 'Mary',
   },
 ]

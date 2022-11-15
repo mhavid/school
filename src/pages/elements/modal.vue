@@ -202,7 +202,7 @@ useHead({
         >
           <template #image>
             <VAvatar
-              picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg"
+              picture="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -227,7 +227,7 @@ useHead({
         >
           <template #image>
             <VAvatar
-              picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg"
+              picture="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -253,7 +253,7 @@ useHead({
         >
           <template #image>
             <VAvatar
-              picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg"
+              picture="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -279,7 +279,7 @@ useHead({
         >
           <template #image>
             <VAvatar
-              picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg"
+              picture="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -305,7 +305,7 @@ useHead({
         >
           <template #image>
             <VAvatar
-              picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg"
+              picture="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
             />
           </template>
@@ -487,7 +487,7 @@ useHead({
                       {
                         value: 'alice',
                         name: 'Alice Carasca',
-                        image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+                        image: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
                       },
                       {
                         value: 'erik',
@@ -497,17 +497,17 @@ useHead({
                       {
                         value: 'melany',
                         name: 'melany Wallace',
-                        image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+                        image: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
                       },
                       {
                         value: 'tara',
                         name: 'Tara Svenson',
-                        image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+                        image: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
                       },
                       {
                         value: 'mary',
                         name: 'Mary Lebowski',
-                        image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+                        image: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
                       },
                       {
                         value: 'irina',

@@ -60,7 +60,7 @@ const columns = {
                   mortes.
                 </p>
                 <div class="candidates">
-                  <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" squared />
+                  <VAvatar picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" squared />
                   <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg32.jpg" squared />
                   <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg9.jpg" squared />
                   <button>
@@ -167,7 +167,7 @@ const columns = {
                   <div class="grid-item">
                     <UserCardDropdown />
                     <VAvatar
-                      picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg"
+                      picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg"
                       badge="/images/icons/stacks/illustrator.svg"
                       size="large"
                     />
@@ -199,7 +199,7 @@ const columns = {
                   <div class="grid-item">
                     <UserCardDropdown />
                     <VAvatar
-                      picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg"
+                      picture="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg"
                       badge="/images/icons/stacks/js.svg"
                       size="large"
                     />

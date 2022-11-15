@@ -6,7 +6,7 @@ export const avatarList = [
   },
   {
     id: 1,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
     name: 'Alice C.',
   },
   {
@@ -25,7 +25,7 @@ export const avatarListCreative = [
   },
   {
     id: 1,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
     name: 'Alice C.',
     color: 'purple',
   },

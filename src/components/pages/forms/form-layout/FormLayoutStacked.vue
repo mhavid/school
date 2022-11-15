@@ -196,7 +196,7 @@ const onSubmit = () => {
 
                   <div>
                     <Tippy class="has-help-cursor" interactive placement="top-start">
-                      <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg" />
+                      <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" />
                       <template #content>
                         <UserPopoverContent :user="popovers.user18" />
                       </template>
@@ -214,7 +214,7 @@ const onSubmit = () => {
 
                   <div>
                     <Tippy class="has-help-cursor" interactive placement="top-start">
-                      <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
+                      <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
                       <template #content>
                         <UserPopoverContent :user="popovers.user7" />
                       </template>
@@ -347,22 +347,22 @@ const onSubmit = () => {
                       {
                         name: 'Joshua S.',
                         value: 'joshua',
-                        icon: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+                        icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
                       },
                       {
                         name: 'Melany W.',
                         value: 'melany',
-                        icon: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+                        icon: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
                       },
                       {
                         name: 'Alice C.',
                         value: 'alice',
-                        icon: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+                        icon: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
                       },
                       {
                         name: 'Esteban C.',
                         value: 'esteban',
-                        icon: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg',
+                        icon: 'https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg',
                       },
                     ]"
                   >

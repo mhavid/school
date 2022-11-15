@@ -241,7 +241,7 @@ const optionsSingle = ['All Posts', 'Recent Posts', 'Older Posts', 'Popular Post
                       </p>
                     </div>
                     <div class="tile-meta">
-                      <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg" size="small" />
+                      <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg" size="small" />
                       <div class="meta-inner">
                         <span class="dark-inverted" data-filter-match> Jimmy H.</span>
                         <span>1 day ago</span>

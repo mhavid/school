@@ -266,7 +266,7 @@ import {
                       :offset="[0, 10]"
                       placement="bottom-end"
                     >
-                      <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg" size="small" />
+                      <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" size="small" />
                       <template #content>
                         <UserPopoverContent :user="popovers.user18" />
                       </template>
@@ -294,7 +294,7 @@ import {
                       :offset="[0, 10]"
                       placement="bottom-end"
                     >
-                      <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" size="small" />
+                      <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" size="small" />
                       <template #content>
                         <UserPopoverContent :user="popovers.user7" />
                       </template>

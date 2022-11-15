@@ -7,7 +7,7 @@ export const projects = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/apps/1.jpg',
     owner: {
       id: 7,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
       name: 'Alice C.',
       initials: 'AC',
       color: 'info',
@@ -29,7 +29,7 @@ export const projects = [
       },
       {
         id: 12,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
         name: 'Joshua S.',
         initials: 'JS',
         color: 'success',
@@ -52,7 +52,7 @@ export const projects = [
     team: [
       {
         id: 13,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+        picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
         name: 'Tara S.',
         initials: 'TS',
         color: 'danger',
@@ -74,7 +74,7 @@ export const projects = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/apps/3.png',
     owner: {
       id: 25,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+      avatar: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
       name: 'Melany W.',
       initials: 'MW',
       color: 'info',
@@ -105,7 +105,7 @@ export const projects = [
     team: [
       {
         id: 13,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+        picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
         name: 'Tara S.',
         initials: 'TS',
         color: 'danger',
@@ -194,7 +194,7 @@ export const projects = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/apps/7.png',
     owner: {
       id: 25,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+      avatar: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
       name: 'Melany W.',
       initials: 'MW',
       color: 'info',
@@ -217,7 +217,7 @@ export const projects = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/apps/8.png',
     owner: {
       id: 5,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
       name: 'Mary L.',
       initials: 'ML',
       color: 'info',
@@ -299,7 +299,7 @@ export const projects = [
       },
       {
         id: 22,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
         name: 'Jimmy H.',
         initials: 'JH',
         color: 'info',
@@ -314,7 +314,7 @@ export const projects = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/apps/11.png',
     owner: {
       id: 13,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+      avatar: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
       name: 'Tara S.',
       initials: 'TS',
       color: 'danger',
@@ -337,7 +337,7 @@ export const projects = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/apps/12.jpg',
     owner: {
       id: 12,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
       name: 'Joshua S.',
       initials: 'JS',
       color: 'info',
@@ -360,7 +360,7 @@ export const projects = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/apps/13.png',
     owner: {
       id: 12,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
       name: 'Joshua S.',
       initials: 'JS',
       color: 'info',
@@ -428,7 +428,7 @@ export const projects = [
     team: [
       {
         id: 5,
-        picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+        picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
         name: 'Mary L.',
         initials: 'ML',
         color: 'info',

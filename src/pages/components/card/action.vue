@@ -61,7 +61,7 @@ useHead({
           </div>
           <div class="column is-4">
             <VCardAction
-              avatar="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg"
+              avatar="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
               title="George W."
               subtitle="Software Engineer"
@@ -73,7 +73,7 @@ useHead({
           </div>
           <div class="column is-4">
             <VCardAction
-              avatar="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg"
+              avatar="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg"
               badge="/images/icons/flags/france.svg"
               title="Sandrine C."
               subtitle="HR Manager"
@@ -108,7 +108,7 @@ useHead({
           </div>
           <div class="column is-4">
             <VCardAction
-              avatar="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg"
+              avatar="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg"
               badge="/images/icons/flags/united-states-of-america.svg"
               title="George W."
               subtitle="Software Engineer"
@@ -125,7 +125,7 @@ useHead({
           </div>
           <div class="column is-4">
             <VCardAction
-              avatar="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg"
+              avatar="https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg"
               badge="/images/icons/flags/france.svg"
               title="Sandrine C."
               subtitle="HR Manager"

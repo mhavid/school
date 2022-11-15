@@ -15,7 +15,7 @@ export const flexRowsOrders = [
   },
   {
     id: 1,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
     username: 'Jimmy H.',
     orderId: '#15893',
     date: 'Oct 31, 2020',
@@ -25,7 +25,7 @@ export const flexRowsOrders = [
   },
   {
     id: 2,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+    picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
     username: 'Melany W.',
     orderId: '#155848',
     date: 'Oct 31, 2020',
@@ -35,7 +35,7 @@ export const flexRowsOrders = [
   },
   {
     id: 3,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png',
     username: 'Joshua S.',
     orderId: '#154736',
     date: 'Oct 30, 2020',
@@ -45,7 +45,7 @@ export const flexRowsOrders = [
   },
   {
     id: 4,
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+    picture: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
     username: 'Tara S.',
     orderId: '#158315',
     date: 'Oct 30, 2020',

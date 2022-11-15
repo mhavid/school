@@ -154,7 +154,7 @@ import { popovers } from '/@src/data/users/userPopovers'
                 :offset="[0, 40]"
                 placement="top-end"
               >
-                <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
+                <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
                 <template #content>
                   <UserPopoverContent :user="popovers.user7" />
                 </template>

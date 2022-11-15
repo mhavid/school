@@ -54,9 +54,9 @@ export const datatableV1 = {
         'busy',
         true,
       ],
-      [1, 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg', 'Alice Carasca', 'Software Engineer', 'offline', true],
-      [2, 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg', 'Tara Svenson', 'UI/UX Designer', 'offline', true],
-      [3, 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg', 'Mary Lebowski', 'Project Manager', 'available', true],
+      [1, 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg', 'Alice Carasca', 'Software Engineer', 'offline', true],
+      [2, 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg', 'Tara Svenson', 'UI/UX Designer', 'offline', true],
+      [3, 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg', 'Mary Lebowski', 'Project Manager', 'available', true],
       [
         4,
         '/images/avatars/placeholder-f.jpg',
@@ -66,7 +66,7 @@ export const datatableV1 = {
         true,
       ],
       [5, 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg27.jpg', 'Carmen Escudero', 'HR Manager', 'offline', true],
-      [6, 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg', 'Dwayne Hicks', 'Product Manager', 'offline', true],
+      [6, 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg', 'Dwayne Hicks', 'Product Manager', 'offline', true],
       [
         7,
         '/images/avatars/placeholder-m.jpg',

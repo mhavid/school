@@ -265,7 +265,7 @@ const userStack = userData.userStack as VAvatarProps[]
         <a href="#" class="dashboard-card is-interview">
           <VBlock title="Joshua S." subtitle="02:30 - 03:00" center>
             <template #icon>
-              <VAvatar picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg" />
+              <VAvatar picture="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png" />
             </template>
             <template #action>
               <i aria-hidden="true" class="iconify" data-icon="feather:chevron-right"></i>

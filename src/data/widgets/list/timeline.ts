@@ -10,7 +10,7 @@ export const timeline = [
   {
     id: 1,
     icon: 'feather:phone-call',
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
     title: 'Meeting with Alice',
     time: 'Today - 01:00pm',
     color: '',

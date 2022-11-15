@@ -15,13 +15,13 @@ const tab = ref(props.activeTab)
 const filterTasks = ref(0)
 
 const participants = [
-  { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg' },
+  { picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg' },
   { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg9.jpg' },
-  { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg' },
+  { picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png' },
   { picture: '/images/avatars/svg/vuero-1.svg' },
-  { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg' },
-  { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg' },
-  { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg' },
+  { picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg' },
+  { picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg' },
+  { picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg' },
 ]
 </script>
 
@@ -269,7 +269,7 @@ const participants = [
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Alice C." subtitle="Software Engineer">
                   <template #icon>
-                    <VAvatar size="medium" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
+                    <VAvatar size="medium" picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
                   </template>
 
                   <template #action>
@@ -305,7 +305,7 @@ const participants = [
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Joshua S." subtitle="Backend Developer">
                   <template #icon>
-                    <VAvatar size="medium" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg" />
+                    <VAvatar size="medium" picture="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png" />
                   </template>
 
                   <template #action>
@@ -341,7 +341,7 @@ const participants = [
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Melany W." subtitle="Web Developer">
                   <template #icon>
-                    <VAvatar size="medium" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg" />
+                    <VAvatar size="medium" picture="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg" />
                   </template>
 
                   <template #action>
@@ -359,7 +359,7 @@ const participants = [
               <div class="column is-6 has-border-bottom">
                 <VBlock center title="Tara S." subtitle="UI/UX Designer">
                   <template #icon>
-                    <VAvatar size="medium" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" />
+                    <VAvatar size="medium" picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" />
                   </template>
 
                   <template #action>
@@ -377,7 +377,7 @@ const participants = [
               <div class="column is-6">
                 <VBlock center title="Esteban C." subtitle="UI/UX Designer">
                   <template #icon>
-                    <VAvatar size="medium" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg" />
+                    <VAvatar size="medium" picture="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" />
                   </template>
 
                   <template #action>
@@ -395,7 +395,7 @@ const participants = [
               <div class="column is-6">
                 <VBlock center title="Mary L." subtitle="Project Manager">
                   <template #icon>
-                    <VAvatar size="medium" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg" />
+                    <VAvatar size="medium" picture="https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg" />
                   </template>
 
                   <template #action>
@@ -444,9 +444,9 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg' },
+                          { picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg' },
                           { picture: '/images/avatars/svg/vuero-1.svg' },
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
+                          { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
                         ]"
                       />
                       <div class="attachments">
@@ -473,7 +473,7 @@ const participants = [
                     <div class="left">
                       <VAvatarStack
                         size="small"
-                        :avatars="[{ picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg' }]"
+                        :avatars="[{ picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png' }]"
                       />
                       <div class="attachments">
                         <i aria-hidden="true" class="lnil lnil-paperclip"></i>
@@ -499,7 +499,7 @@ const participants = [
                     <div class="left">
                       <VAvatarStack
                         size="small"
-                        :avatars="[{ picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg' }]"
+                        :avatars="[{ picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png' }]"
                       />
                       <div class="attachments">
                         <i aria-hidden="true" class="lnil lnil-paperclip"></i>
@@ -526,8 +526,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg' },
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg' },
+                          { picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg' },
+                          { picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg' },
                         ]"
                       />
                       <div class="attachments">
@@ -554,7 +554,7 @@ const participants = [
                     <div class="left">
                       <VAvatarStack
                         size="small"
-                        :avatars="[{ picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg' }]"
+                        :avatars="[{ picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg' }]"
                       />
                       <div class="attachments">
                         <i aria-hidden="true" class="lnil lnil-paperclip"></i>
@@ -581,8 +581,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg' },
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg' },
+                          { picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg' },
+                          { picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png' },
                         ]"
                       />
                       <div class="attachments">
@@ -610,8 +610,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg' },
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg' },
+                          { picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg' },
+                          { picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png' },
                         ]"
                       />
                       <div class="attachments">
@@ -639,8 +639,8 @@ const participants = [
                       <VAvatarStack
                         size="small"
                         :avatars="[
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg' },
-                          { picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg12.jpg' },
+                          { picture: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg' },
+                          { picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Napa_cabbages.png/640px-Napa_cabbages.png' },
                         ]"
                       />
                       <div class="attachments">

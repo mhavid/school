@@ -71,7 +71,7 @@ export const posts = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/17.jpg',
     author: {
       id: 22,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
       name: 'Jimmy H.',
       initials: 'JH',
       color: 'info',
@@ -84,7 +84,7 @@ export const posts = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/18.jpg',
     author: {
       id: 22,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
       name: 'Jimmy H.',
       initials: 'JH',
       color: 'info',
@@ -188,7 +188,7 @@ export const posts = [
     image: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpgphotos/26.jpg',
     author: {
       id: 5,
-      avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+      avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
       name: 'Mary L.',
       initials: 'ML',
       color: 'info',

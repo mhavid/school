@@ -245,9 +245,9 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                     </div>
                     <div class="people">
                       <VAvatar size="small" initials="BT" color="warning" />
-                      <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg" />
+                      <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" />
                       <VAvatar size="small" initials="JD" color="info" />
-                      <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
+                      <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
                       <VAvatar size="small" initials="38" />
                     </div>
                   </div>
@@ -281,7 +281,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                       <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg38.jpg" />
                       <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg11.jpg" />
                       <VAvatar size="small" initials="SC" color="h-purple" />
-                      <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" />
+                      <VAvatar size="small" picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" />
                       <VAvatar size="small" initials="19" />
                     </div>
                   </div>
@@ -297,8 +297,8 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                     <div class="people">
                       <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg21.jpg" />
                       <VAvatar size="small" initials="SC" color="h-purple" />
-                      <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg" />
-                      <VAvatar size="small" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg" />
+                      <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg" />
+                      <VAvatar size="small" picture="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg" />
                       <VAvatar size="small" initials="31" />
                     </div>
                   </div>
@@ -325,7 +325,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   <div class="recommendations-item">
                     <VAvatar
                       size="large"
-                      picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg"
+                      picture="https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg"
                       badge="/images/icons/flags/united-states-of-america.svg"
                     />
                     <h3 class="dark-inverted">Project Manager</h3>
@@ -343,7 +343,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   <div class="recommendations-item">
                     <VAvatar
                       size="large"
-                      picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg18.jpg"
+                      picture="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg"
                       badge="/images/icons/flags/united-states-of-america.svg"
                     />
 
@@ -475,7 +475,7 @@ import { onceImageErrored } from '/@src/utils/via-placeholder'
                   <!--People-->
                   <a href="#" class="people-item">
                     <VAvatar
-                      picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg"
+                      picture="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg"
                       badge="/images/icons/stacks/js.svg"
                     />
 

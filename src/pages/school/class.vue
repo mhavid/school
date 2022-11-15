@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue'
 import { useNotyf } from '/@src/composable/useNotyf'
 const notif:any = useNotyf()
 import { useI18n } from 'vue-i18n'
-const { locale, t } = useI18n()
+const { t } = useI18n()
 
 import { useViewWrapper } from '/@src/stores/viewWrapper'
 import { useClasses } from '/@src/stores/classes'

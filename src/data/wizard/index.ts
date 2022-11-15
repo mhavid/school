@@ -57,7 +57,7 @@ export const users = [
     name: 'Yasseene Amzi',
   },
   {
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
     name: 'Mary Lebowski',
   },
   {

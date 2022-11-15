@@ -421,7 +421,7 @@ onMounted(async () => {
                   :offset="[0, 10]"
                   placement="top-start"
                 >
-                  <VAvatar size="medium" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" />
+                  <VAvatar size="medium" picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" />
                   <template #content>
                     <UserPopoverContent :user="popovers.user13" />
                   </template>

@@ -115,7 +115,7 @@ const totalColumns = {
       <div class="invoice-card">
         <div class="invoice-section is-flex is-bordered">
           <Tippy class="has-help-cursor" interactive placement="bottom-start">
-            <VAvatar size="large" picture="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg" />
+            <VAvatar size="large" picture="https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg" />
             <template #content>
               <UserPopoverContent :user="popovers.user13" />
             </template>

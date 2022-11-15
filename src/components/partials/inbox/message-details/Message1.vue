@@ -29,7 +29,7 @@ const dropdown2 = useDropdown(dropdownElement2)
     <div class="header-area">
       <img
         class="sender-pic"
-        src="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg"
+        src="https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg"
         alt=""
         @error.once="onceImageErrored(150)"
       />

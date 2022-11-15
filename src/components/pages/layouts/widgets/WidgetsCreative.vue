@@ -151,7 +151,7 @@ import Widget8 from '/@src/assets/illustrations/widgets/8.svg'
       <!--Widget-->
       <CallWidget
         picture="/@src/assets/illustrations/widgets/6.svg"
-        badge="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg"
+        badge="https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg"
         username="Alice"
       />
 

@@ -1,7 +1,7 @@
 export const users = [
   {
     id: 13,
-    avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg13.jpg',
+    avatar: 'https://s3.theasianparent.com/tap-assets-prod/wp-content/uploads/sites/24/2021/01/barbarossa.jpg',
     badge: '/images/icons/stacks/illustrator.svg',
     username: 'Tara S.',
     fullName: 'Tara Svenson',
@@ -27,7 +27,7 @@ export const users = [
   },
   {
     id: 25,
-    avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg25.jpg',
+    avatar: 'https://cdn.britannica.com/45/126445-050-4C0FA9F6/Kiwi-fruit.jpg',
     badge: '/images/icons/stacks/js.svg',
     username: 'Melany W.',
     fullName: 'Melany Wallace',
@@ -105,7 +105,7 @@ export const users = [
   },
   {
     id: 5,
-    avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+    avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Mary L.',
     fullName: 'Mary Lebowski',
@@ -209,7 +209,7 @@ export const users = [
   },
   {
     id: 7,
-    avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+    avatar: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Alice C.',
     fullName: 'Alice Carasca',
@@ -222,7 +222,7 @@ export const users = [
   },
   {
     id: 22,
-    avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg22.jpg',
+    avatar: 'https://upload.wikimedia.org/wikipedia/commons/3/3a/Capsicum_annuum_fruits_IMGP0044.jpg',
     badge: '/images/icons/flags/united-states-of-america.svg',
     username: 'Dwayne H.',
     fullName: 'Dwayne Hicks',

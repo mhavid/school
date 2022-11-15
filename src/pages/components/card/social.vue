@@ -64,7 +64,7 @@ useHead({
         <VCardSocial
           title="Featured Story"
           network="instagram"
-          avatar="https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg"
+          avatar="https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg"
           username="Mary L."
           :hashtags="['#bulmaio', '#css', '#responsive']"
         >

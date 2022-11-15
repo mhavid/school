@@ -1,14 +1,15 @@
 <script setup lang="ts">
+import {ref} from "vue"
 const people = [
   {
     name: 'Alice Carasca',
     role: 'Software Engineer',
-    avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+    avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
   },
   {
     name: 'Mary Lebowski',
     role: 'Project Manager',
-    avatar: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg5.jpg',
+    avatar: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Blueberries_.jpg',
   },
   {
     name: 'Ryan Brentman',

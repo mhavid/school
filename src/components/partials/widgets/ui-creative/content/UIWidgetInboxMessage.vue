@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import {ref} from "vue"
 const props = withDefaults(
   defineProps<{
     title?: string
@@ -9,7 +10,7 @@ const props = withDefaults(
   {
     title: 'Design Project',
     user: 'Alice C.',
-    picture: 'https://jubi.co.id/wp-content/uploads/2020/06/Buah-jeruk-Tempo.co_.jpg7.jpg',
+    picture: 'https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg',
     time: '28 minutes ago',
   }
 )

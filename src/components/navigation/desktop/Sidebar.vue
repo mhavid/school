@@ -295,7 +295,7 @@ const themeClasses = computed(() => {
 
     .icon-menu {
       overflow-y: auto;
-      max-height: 400px;
+      // max-height: 400px;
     }
 
     .icon-menu,

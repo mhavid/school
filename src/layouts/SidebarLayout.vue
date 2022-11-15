@@ -134,33 +134,87 @@ watch(
 
     <Sidebar :theme="props.theme" :is-open="isDesktopSidebarOpen">
       <template #links>
+        <!-- Dashboard -->
+        <li>
+          <a :class="[activeMobileSubsidebar === 'dashboard' && 'is-active']" data-content="Dashboards" @keydown.space.prevent="switchSidebar('dashboard')" @click="switchSidebar('dashboard')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="fa:home"></i>
+          </a>
+        </li>
         <!-- Academica -->
         <li>
-          <a  :class="[activeMobileSubsidebar === 'academic' && 'is-active']" data-content="Dashboards" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('academic')" @click="switchSidebar('academic')">
+          <a  :class="[activeMobileSubsidebar === 'academic' && 'is-active']" data-content="Academic" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('academic')" @click="switchSidebar('academic')">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="fa:graduation-cap"></i>
+          </a>
+        </li>
+        <!-- Attendance -->
+        <li>
+          <a  :class="[activeMobileSubsidebar === 'attendance' && 'is-active']" data-content="Academic" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('attendance')" @click="switchSidebar('attendance')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:clipboard"></i>
+          </a>
+        </li>
+        <!-- Consultation -->
+        <!-- <li>
+          <a  :class="[activeMobileSubsidebar === 'consultation' && 'is-active']" data-content="Academic" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('consultation')" @click="switchSidebar('consultation')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="fa:handshake-o"></i>
+          </a>
+        </li> -->
+        <!-- Staff -->
+        <li>
+          <a  :class="[activeMobileSubsidebar === 'staff' && 'is-active']" data-content="Academic" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('staff')" @click="switchSidebar('staff')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="fa:users"></i>
+          </a>
+        </li>
+        <!-- Library -->
+        <li>
+          <a  :class="[activeMobileSubsidebar === 'library' && 'is-active']" data-content="Academic" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('library')" @click="switchSidebar('library')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:book-open"></i>
+          </a>
+        </li>
+        <!-- Canteen -->
+        <li>
+          <a  :class="[activeMobileSubsidebar === 'canteen' && 'is-active']" data-content="Academic" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('canteen')" @click="switchSidebar('canteen')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:coffee"></i>
+          </a>
+        </li>
+        <!-- Finance -->
+        <li>
+          <a  :class="[activeMobileSubsidebar === 'finance' && 'is-active']" data-content="Academic" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('finance')" @click="switchSidebar('finance')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="fa:credit-card-alt"></i>
+          </a>
+        </li>
+        <!-- PPDB -->
+        <li>
+          <a  :class="[activeMobileSubsidebar === 'ppdb' && 'is-active']" data-content="Academic" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('ppdb')" @click="switchSidebar('ppdb')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:user-plus"></i>
+          </a>
+        </li>
+        <!-- database -->
+        <li>
+          <a  :class="[activeMobileSubsidebar === 'database' && 'is-active']" data-content="Academic" aria-label="View dashboards" tabindex="0" @keydown.space.prevent="switchSidebar('database')" @click="switchSidebar('database')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:database"></i>
           </a>
         </li>
 
         <!-- Layouts -->
-        <li>
+        <!-- <li>
           <a :class="[activeMobileSubsidebar === 'layout' && 'is-active']" data-content="Layouts" aria-label="View layouts" tabindex="0" @keydown.space.prevent="switchSidebar('layout')" @click="switchSidebar('layout')">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:grid"></i>
           </a>
-        </li>
+        </li> -->
 
         <!-- Elements -->
-        <li>
+        <!-- <li>
           <a :class="[activeMobileSubsidebar === 'elements' && 'is-active']" data-content="Elements" aria-label="View elements" tabindex="0" @keydown.space.prevent="switchSidebar('elements')" @click="switchSidebar('elements')">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:box"></i>
           </a>
-        </li>
+        </li> -->
 
         <!-- Components -->
-        <li>
+        <!-- <li>
           <a :class="[activeMobileSubsidebar === 'components' && 'is-active']" data-content="Components" aria-label="View components" tabindex="0" @keydown.space.prevent="switchSidebar('components')" @click="switchSidebar('components')">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:cpu"></i>
           </a>
-        </li>
+        </li> -->
 
         <!-- Messaging -->
         <!-- <li>
@@ -183,19 +237,24 @@ watch(
 
         <!-- Search -->
         <li class="right-panel-trigger is-hidden-touch">
-          <a aria-label="Display search panel" data-content="Search" tabindex="0" @keydown.space.prevent="panels.setActive('search')" @click="panels.setActive('search')">
+          <!-- <a aria-label="Display search panel" data-content="Search" tabindex="0" @keydown.space.prevent="panels.setActive('search')" @click="panels.setActive('search')">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-search" />
           </a>
           <a aria-label="Close all panels" class="is-hidden is-inactive" tabindex="0" @keydown.space.prevent="panels.close()" @click="panels.close()">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather-x" />
-          </a>
+          </a> -->
         </li>
 
         <!-- Settings -->
-        <li class="is-hidden-touch">
+        <!-- <li class="is-hidden-touch">
           <RouterLink id="open-settings" to="/sidebar/layouts/profile-settings" data-content="Settings">
             <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:settings"></i>
           </RouterLink>
+        </li> -->
+        <li class="is-hidden-touch">
+          <a :class="[activeMobileSubsidebar === 'components' && 'is-active']" data-content="Components" aria-label="View components" tabindex="0" @keydown.space.prevent="switchSidebar('components')" @click="switchSidebar('components')">
+            <i aria-hidden="true" class="iconify sidebar-svg" data-icon="feather:settings"></i>
+          </a>
         </li>
 
         <!-- Profile Dropdown -->
@@ -207,12 +266,12 @@ watch(
 
         <!-- <DashboardsSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'academic'" @close="isDesktopSidebarOpen = false" /> -->
     <Transition name="slide-x">
-      <KeepAlive>
-        <ComponentsSubsidebar v-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'components'" @close="isDesktopSidebarOpen = false" />
-        <ElementsSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'elements'" @close="isDesktopSidebarOpen = false" />
+      <!-- <KeepAlive> -->
+        <ComponentsSubsidebar v-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'dashboard'" @close="isDesktopSidebarOpen = false" />
         <AcademicSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'academic'" @close="isDesktopSidebarOpen = false" />
-        <LayoutsSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'layout'" @close="isDesktopSidebarOpen = false" />
-      </KeepAlive>
+        <AttendanceSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'attendance'" @close="isDesktopSidebarOpen = false" />
+        <!-- <LayoutsSubsidebar v-else-if="isDesktopSidebarOpen && activeMobileSubsidebar === 'layout'" @close="isDesktopSidebarOpen = false" /> -->
+      <!-- </KeepAlive> -->
     </Transition>
 
     <LanguagesPanel />
